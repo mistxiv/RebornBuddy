@@ -645,7 +645,7 @@ Authors:  Sodimm, TuckMeIntoBread
 								</While>
 							</If>
 							<If Condition="ClassName == ClassJobType.Blacksmith">
-								<p></p>Synthesize RecipeId="32722"/>
+								<Synthesize RecipeId="32722"/>
 								<While Condition="CraftingManager.IsCrafting">
 									<CraftAction Name="Basic Synthesis" ActionId="100015"/>
 								</While>
