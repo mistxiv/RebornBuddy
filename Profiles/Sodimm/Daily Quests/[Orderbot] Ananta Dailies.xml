@@ -521,43 +521,43 @@ Authors:  Sodimm
         <If Condition="GetQuestStep(68578) == 1">
           <If Condition="GetQuestById(68578).GetTodoArgs(1, 0).Item1 == 0">
             <If Condition="Array[int]([1, 2, 3, 7, 9, 10]).Contains(GetQuestById(68578).QuestI8BL)">
-              <FlyTo XYZ="-213.1533, 40.39063, 228.3817" Land="True"/>
+              <LisbethTravel ZoneId="612" XYZ="-213.1533, 40.39063, 228.3817"/>
               <UseObject NpcId="2009315" XYZ="-213.1533, 40.39063, 228.3817" Condition="GetQuestById(68578).GetTodoArgs(1, 0).Item1 == 0"/>
             </If>
             <If Condition="GetQuestById(68578).QuestI8BL == 8">
-              <FlyTo XYZ="-340.1694, 51.71277, 285.7556" Land="True"/>
+              <LisbethTravel ZoneId="612" XYZ="-340.1694, 51.71277, 285.7556"/>
               <UseObject NpcId="2009316" XYZ="-340.1694, 51.71277, 285.7556" Condition="GetQuestById(68578).GetTodoArgs(1, 0).Item1 == 0"/>
             </If>
             <If Condition="Array[int]([4, 5, 6]).Contains(GetQuestById(68578).QuestI8BL)">
-              <FlyTo XYZ="-347.3411, 46.06689, 216.9985" Land="True"/>
+              <LisbethTravel ZoneId="612" XYZ="-347.3411, 46.06689, 216.9985"/>
               <UseObject NpcId="2009317" XYZ="-347.3411, 46.06689, 216.9985" Condition="GetQuestById(68578).GetTodoArgs(1, 0).Item1 == 0"/>
             </If>
           </If>
           <If Condition="GetQuestById(68578).GetTodoArgs(1, 0).Item1 == 1">
             <If Condition="Array[int]([3, 4, 8]).Contains(GetQuestById(68578).QuestI8BL)">
-              <FlyTo XYZ="-297.6578, 57.1145, 354.4213" Land="True"/>
+              <LisbethTravel ZoneId="612" XYZ="-297.6578, 57.1145, 354.4213"/>
               <UseObject NpcId="2009313" XYZ="-297.6578, 57.1145, 354.4213" Condition="GetQuestById(68578).GetTodoArgs(1, 0).Item1 == 1"/>
             </If>
             <If Condition="Array[int]([1, 2, 9]).Contains(GetQuestById(68578).QuestI8BL)">
-              <FlyTo XYZ="-347.3411, 46.06689, 216.9985" Land="True"/>
+              <LisbethTravel ZoneId="612" XYZ="-347.3411, 46.06689, 216.9985"/>
               <UseObject NpcId="2009317" XYZ="-347.3411, 46.06689, 216.9985" Condition="GetQuestById(68578).GetTodoArgs(1, 0).Item1 == 1"/>
             </If>
             <If Condition="Array[int]([5, 6, 7, 10]).Contains(GetQuestById(68578).QuestI8BL)">
-              <FlyTo XYZ="-340.1694, 51.71277, 285.7556" Land="True"/>
+              <LisbethTravel ZoneId="612" XYZ="-340.1694, 51.71277, 285.7556"/>
               <UseObject NpcId="2009316" XYZ="-340.1694, 51.71277, 285.7556" Condition="GetQuestById(68578).GetTodoArgs(1, 0).Item1 == 1"/>
             </If>
           </If>
           <If Condition="GetQuestById(68578).GetTodoArgs(1, 0).Item1 == 2">
             <If Condition="Array[int]([1, 6, 7]).Contains(GetQuestById(68578).QuestI8BL)">
-              <FlyTo XYZ="-297.6578, 57.1145, 354.4213" Land="True"/>
+              <LisbethTravel ZoneId="612" XYZ="-297.6578, 57.1145, 354.4213"/>
               <UseObject NpcId="2009313" XYZ="-297.6578, 57.1145, 354.4213" Condition="GetQuestById(68578).GetTodoArgs(1, 0).Item1 == 2"/>
             </If>
             <If Condition="Array[int]([2, 3, 4, 5, 8, 10]).Contains(GetQuestById(68578).QuestI8BL)">
-              <FlyTo XYZ="-253.1014, 60.71558, 363.0884" ArrivalTolerance="0.5" AllowedVariance="1.0" Land="True"/>
+              <LisbethTravel ZoneId="612" XYZ="-253.1014, 60.71558, 363.0884" ArrivalTolerance="0.5" AllowedVariance="1.0"/>
               <UseObject NpcId="2009314" XYZ="-253.1014, 60.71558, 363.0884" Condition="GetQuestById(68578).GetTodoArgs(1, 0).Item1 == 2"/>
             </If>
             <If Condition="GetQuestById(68578).QuestI8BL == 9">
-              <FlyTo XYZ="-340.1694, 51.71277, 285.7556" Land="True"/>
+              <LisbethTravel ZoneId="612" XYZ="-340.1694, 51.71277, 285.7556"/>
               <UseObject NpcId="2009316" XYZ="-340.1694, 51.71277, 285.7556" Condition="GetQuestById(68578).GetTodoArgs(1, 0).Item1 == 2"/>
             </If>
           </If>
@@ -627,21 +627,21 @@ Authors:  Sodimm
         <If Condition="GetQuestStep(68582) == 1">
           <If Condition="GetQuestById(68582).GetTodoArgs(1, 0).Item1 == 0">
             <If Condition="Array[int]([1, 3]).Contains(GetQuestById(68582).QuestI8CL)">
-              <FlyTo XYZ="-500.0534, 72.12939, -162.4324" Land="True"/>
+              <LisbethTravel ZoneId="612" XYZ="-500.0534, 72.12939, -162.4324"/>
               <UseObject NpcId="2009329" XYZ="-500.0534, 72.12939, -162.4324" Condition="GetQuestById(68582).GetTodoArgs(1, 0).Item1 == 0"/>
             </If>
             <If Condition="GetQuestById(68582).QuestI8CL == 2">
-              <FlyTo XYZ="-491.722, 55.25281, -17.74628" Land="True"/>
+              <LisbethTravel ZoneId="612" XYZ="-491.722, 55.25281, -17.74628" Land="True"/>
               <UseObject NpcId="2009328" XYZ="-491.722, 55.25281, -17.74628" Condition="GetQuestById(68582).GetTodoArgs(1, 0).Item1 == 0"/>
             </If>
           </If>
           <If Condition="GetQuestById(68582).GetTodoArgs(1, 0).Item1 == 1">
             <If Condition="Array[int]([1, 2]).Contains(GetQuestById(68582).QuestI8CL)">
-              <FlyTo XYZ="-542.2294, 44.05273, 202.9907" Land="True"/>
+              <LisbethTravel ZoneId="612" XYZ="-542.2294, 44.05273, 202.9907" Land="True"/>
               <UseObject NpcId="2009327" XYZ="-542.2294, 44.05273, 202.9907" Condition="GetQuestById(68582).GetTodoArgs(1, 0).Item1 == 1"/>
             </If>
             <If Condition="GetQuestById(68582).QuestI8CL == 3">
-              <FlyTo XYZ="-491.722, 55.25281, -17.74628" Land="True"/>
+              <LisbethTravel ZoneId="612" XYZ="-491.722, 55.25281, -17.74628" Land="True"/>
               <UseObject NpcId="2009328" XYZ="-491.722, 55.25281, -17.74628" Condition="GetQuestById(68582).GetTodoArgs(1, 0).Item1 == 1"/>
             </If>
           </If>
@@ -802,24 +802,24 @@ Authors:  Sodimm
         <If Condition="GetQuestStep(68593) == 1">
           <If Condition="GetQuestById(68593).GetTodoArgs(1, 0).Item1 == 0">
             <If Condition="GetQuestById(68593).QuestI8CL == 1">
-              <FlyTo XYZ="12.58862, 41.67236, -294.0261" Land="True"/>
+              <LisbethTravel ZoneId="612" XYZ="12.58862, 41.67236, -294.0261"/>
               <UseObject NpcId="2009346" XYZ="12.58862, 41.67236, -294.0261" Condition="not ObjectExistsWithId(7031)"/>
               <SoUseItem ItemId="2002439" NpcId="7031" XYZ="12.58862, 41.67236, -294.0261" InCombat="True" UseHealthPercent="2" Condition="GetQuestById(68593).GetTodoArgs(1, 0).Item1 == 0"/>
             </If>
             <If Condition="Array[int]([2, 3]).Contains(GetQuestById(68593).QuestI8CL)">
-              <FlyTo XYZ="101.3046, 41.03149, -180.8957" Land="True"/>
+              <LisbethTravel ZoneId="612" XYZ="101.3046, 41.03149, -180.8957"/>
               <UseObject NpcId="2009344" XYZ="101.3046, 41.03149, -180.8957" Condition="not ObjectExistsWithId(7031)"/>
               <SoUseItem ItemId="2002439" NpcId="7031" XYZ="101.3046, 41.03149, -180.8957" InCombat="True" UseHealthPercent="2" Condition="GetQuestById(68593).GetTodoArgs(1, 0).Item1 == 0"/>
             </If>
           </If>
           <If Condition="GetQuestById(68593).GetTodoArgs(1, 0).Item1 == 1">
             <If Condition="Array[int]([1, 3]).Contains(GetQuestById(68593).QuestI8CL)">
-              <FlyTo XYZ="136.4004, 50.37, -397.6959" Land="True"/>
+              <LisbethTravel ZoneId="612" XYZ="136.4004, 50.37, -397.6959"/>
               <UseObject NpcId="2009345" XYZ="136.4004, 50.37, -397.6959" Condition="not ObjectExistsWithId(7031)"/>
               <SoUseItem ItemId="2002439" NpcId="7031" XYZ="136.4004, 50.37, -397.6959" InCombat="True" UseHealthPercent="2" Condition="GetQuestById(68593).GetTodoArgs(1, 0).Item1 == 1"/>
             </If>
             <If Condition="GetQuestById(68593).QuestI8CL == 2">
-              <FlyTo XYZ="12.58862, 41.67236, -294.0261" Land="True"/>
+              <LisbethTravel ZoneId="612" XYZ="12.58862, 41.67236, -294.0261"/>
               <UseObject NpcId="2009346" XYZ="12.58862, 41.67236, -294.0261" Condition="not ObjectExistsWithId(7031)"/>
               <SoUseItem ItemId="2002439" NpcId="7031" XYZ="12.58862, 41.67236, -294.0261" InCombat="True" UseHealthPercent="2" Condition="GetQuestById(68593).GetTodoArgs(1, 0).Item1 == 1"/>
             </If>
@@ -1511,7 +1511,7 @@ Authors:  Sodimm
         var _npcIds = new uint[] { 1025063, 1025064, 1025065, 1025066 };
 
         await CommonTasks.StopAndDismount();
-    
+
         var activeId = 0u;
         foreach(var id in _npcIds)
         {
@@ -1530,7 +1530,7 @@ Authors:  Sodimm
           if (activeId == 1025063 || activeId == 1025064)  {  ChatManager.SendChat("/soothe");  }
           else {  ChatManager.SendChat("/rally");  }
         }
-    
+
         while (_obj != null && _obj.IsVisible && _obj.IsTargetable)
         {
           if (Talk.DialogOpen)  {  Talk.Next();  }

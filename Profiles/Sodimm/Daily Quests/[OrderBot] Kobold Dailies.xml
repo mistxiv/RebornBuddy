@@ -32,8 +32,8 @@ Authors:  Sodimm.
       <TalkTo NpcId="1006325" XYZ="-141.558, 64.59769, -212.2683" QuestId="66856" StepId="4"/>
     </If>
 	<If Condition="GetQuestStep(66856) == 5">
-	  <GetTo ZoneId="180" XYZ="19.48578, 16.1593, -196.4294" />		
-	</If>    
+	  <GetTo ZoneId="180" XYZ="19.48578, 16.1593, -196.4294" />
+	</If>
 	<If Condition="GetQuestStep(66856) == 6">
       <GetTo ZoneId="180" XYZ="18.45732, 16.25303, -198.7673"/>
       <TalkTo NpcId="1007950" XYZ="19.48578, 16.1593, -196.4294" QuestId="66856" StepId="6"/>
@@ -41,12 +41,12 @@ Authors:  Sodimm.
     <If Condition="GetQuestStep(66856) == 255">
       <GetTo ZoneId="180" XYZ="-0.2465663, 16.18168, -172.6829"/>
       <TurnIn QuestId="66856" NpcId="1005927" XYZ="-2.853455, 16.03717, -172.5033"/>
-    </If> 
+    </If>
     <!-- How Low Can You Go -->
     <If Condition="not HasQuest(66857) and not IsQuestCompleted(66857)">
         <If Condition="not IsOnMap(180 )">
 			<TeleportTo Name="Camp Overlook" AetheryteId="16"/>
-		</If>	
+		</If>
 	  <FlyTo ZoneId="180" XYZ="-2.853455, 16.03717, -172.5033" />
       <If Condition="IsQuestAcceptQualified(66857)">
         <PickupQuest QuestId="66857" NpcId="1005927"/>
@@ -61,7 +61,7 @@ Authors:  Sodimm.
 			<HotSpot XYZ="197.0092,64.04211,-225.6047" Radius="20"/>
 			<HotSpot XYZ="181.4755,64.59143,-282.4293" Radius="20"/>
 		</HotSpots>
-	  </UseObject>	
+	  </UseObject>
     </If>
     <If Condition="GetQuestStep(66857) == 2">
 	  <FlyTo XYZ="-2.853455, 16.03717, -172.5033" />
@@ -1644,7 +1644,7 @@ Authors:  Sodimm.
           await Coroutine.Sleep(500);
         }
       ]]></CodeChunk>
-    <CodeChunk Name="66878a"><![CDATA[ 
+    <CodeChunk Name="66878a"><![CDATA[
         if (Core.Player.IsMounted)
         {
           ff14bot.Managers.ActionManager.Dismount();
@@ -1657,7 +1657,7 @@ Authors:  Sodimm.
         await Coroutine.Sleep(3000);
         ff14bot.Managers.MovementManager.MoveForwardStop();
       ]]></CodeChunk>
-    <CodeChunk Name="66878b"><![CDATA[ 
+    <CodeChunk Name="66878b"><![CDATA[
         ff14bot.Managers.MovementManager.SetFacing(3.207531f);
         ff14bot.Managers.MovementManager.MoveForwardStart();
         await Coroutine.Sleep(1500);

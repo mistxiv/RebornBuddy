@@ -5276,7 +5276,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
         </HotSpots>
       </UseObject>
     </If>
-    <If Condition="GetQuestStep(67026) == 255"> 
+    <If Condition="GetQuestStep(67026) == 255">
       <NoCombatMoveTo Name="Sezul Totoloc" XYZ="149.4315, -18.1403, 99.22937"/>
       <RunCode Name="HandInClass"/>
       <TurnIn QuestId="67026" NpcId="1009199" ItemId="2001368" XYZ="149.4315, -18.1403, 99.22937"/>
@@ -5320,7 +5320,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <TeleportTo AetheryteId="2" Name="132"/>
         </If>
         <If Condition="IsOnMap(132)">
-          <HandOver ItemId="2001367" QuestId="67025" StepId="3" NpcId="1009607" XYZ="191.0582, 0, 46.34167"/>     
+          <HandOver ItemId="2001367" QuestId="67025" StepId="3" NpcId="1009607" XYZ="191.0582, 0, 46.34167"/>
         </If>
       </If>
       <If Condition="GetQuestStep(67025) == 4">
@@ -5330,7 +5330,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
         <If Condition="IsOnMap(154)">
           <NoCombatMoveTo XYZ="-4.104736, -40.95, 176.8368" Name="Hildeyerd"/>
           <RunCode Name="CraftClass"/>
-          <HandOver ItemId="2001366" QuestId="67025" StepId="4" NpcId="1009218" XYZ="-4.104736, -40.95, 176.8368"/>        
+          <HandOver ItemId="2001366" QuestId="67025" StepId="4" NpcId="1009218" XYZ="-4.104736, -40.95, 176.8368"/>
         </If>
       </If>
       <While Condition="GetQuestStep(67025) == 255 and not HqHasAtLeast(8131,1)">
@@ -5589,10 +5589,10 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     <If Condition="GetQuestStep(67023) == 1">
       <RunCode Name="CombatClass"/>
       <NoCombatMoveTo Name="Qiqirn Junkmonger" XYZ="-22.56818, -48.09821, 289.6619"/>
-      <TalkTo InteractDistance="3.0" NpcId="1009594" XYZ="-22.56818, -48.09821, 289.6619"/> 
+      <TalkTo InteractDistance="3.0" NpcId="1009594" XYZ="-22.56818, -48.09821, 289.6619"/>
     </If>
     <If Condition="GetQuestStep(67023) == 2">
-      <NoCombatMoveTo Name="Hildeyerd" XYZ="-4.104736, -40.95, 176.8368"/>	
+      <NoCombatMoveTo Name="Hildeyerd" XYZ="-4.104736, -40.95, 176.8368"/>
       <HandOver ItemId="2001364" QuestId="67023" StepId="2" NpcId="1009218" XYZ="-4.104736, -40.95, 176.8368"/>
     </If>
     <If Condition="GetQuestStep(67023) == 3 and not HasAtLeast(8129,1)">

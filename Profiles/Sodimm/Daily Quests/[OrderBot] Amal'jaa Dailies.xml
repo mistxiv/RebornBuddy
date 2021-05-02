@@ -1252,7 +1252,7 @@ Authors:  Sodimm.
         if (FateManager.WithinFate && FateManager.GetFateById(557).MaxLevel < Core.Me.ClassLevel && !Core.Me.IsLevelSynced)
         {
           while (FateManager.GetFateById(557).TimeLeft.Minutes < 5) {  await Coroutine.Yield();  }
-      
+
           if (Core.Me.IsMounted)  {  await CommonTasks.StopAndDismount();  }
 
           await Coroutine.Sleep(3000);

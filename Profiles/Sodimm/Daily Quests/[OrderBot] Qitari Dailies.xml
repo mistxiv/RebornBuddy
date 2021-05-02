@@ -480,7 +480,7 @@ Requires: ExBuddy.
 						<TalkTo InteractDistance="3.0" QuestId="69365" StepId="1" NpcId="1032830" XYZ="-134.02, -18.46058, 303.5476" />
 					</If>
 					<If Condition="GetQuestStep(69365) == 2">
-						<UseItem ItemId="2002980" NpcIds="1032830,1032831" XYZ="-54.79517, 0.7328947, 217.0901"  Radius="25"  QuestId="69365" StepId="2"/>	
+						<UseItem ItemId="2002980" NpcIds="1032830,1032831" XYZ="-54.79517, 0.7328947, 217.0901"  Radius="25"  QuestId="69365" StepId="2"/>
 					</If>
 					<If Condition="GetQuestStep(69365) == 3">
 						<HandOver ItemId="2002981" QuestId="69365" StepId="3" NpcId="1032830" XYZ="-134.02, -18.46058, 303.5476" />
@@ -1126,7 +1126,7 @@ Requires: ExBuddy.
 			</If>
 			<If Condition="HasAtLeastOneDailyQuestCompleted(Array[int]([&dailyIds;]))">
 
-				<If Condition="not IsOnSubMap(3472)">	
+				<If Condition="not IsOnSubMap(3472)">
 					<TeleportTo Name="Fanow" AetheryteId="143" Force="True"/>
 					<FlyTo XYZ="791.0349, -45.83972, -202.5477" Land="True"/>
 				</If>
@@ -1135,7 +1135,7 @@ Requires: ExBuddy.
 				<!--  Eggspotting -->
 				<If Condition="GetQuestStep(69365) == 255">
 					<TurnIn QuestId="69365" NpcId="1032643" ItemId="2002982" XYZ="787.0145, -45.82774, -218.555" />
-				</If> 
+				</If>
 
 				<!-- Power to the Vegetables -->
 				<If Condition="GetQuestStep(69346) == 255">
@@ -1676,7 +1676,7 @@ Requires: ExBuddy.
 					<TalkTo InteractDistance="3.0" QuestId="69334" StepId="2" NpcId="1027716" XYZ="494.9873, -6.555339, -224.9333" />
 				</If>
 
-				<If Condition="GetQuestStep(69334) == 3">	
+				<If Condition="GetQuestStep(69334) == 3">
 					<FlyTo XYZ="791.0349, -45.83972, -202.5477" Land="True"/>
 					<HandOver ItemId="2002990" QuestId="69334" StepId="3" NpcId="1032967" XYZ="774.8989, -45.74954, -205.5237" />
 				</If>
@@ -1707,7 +1707,7 @@ Requires: ExBuddy.
 
 				<If Condition="GetQuestStep(69334) == 255">
 					<TurnIn QuestId="69334" NpcId="1032660" ItemId="2001976" XYZ="804.4098, -45.9255, -216.4188" />
-				</If> 
+				</If>
 
 			</If>
 
@@ -1733,7 +1733,7 @@ Requires: ExBuddy.
 
 			<If Condition="GetQuestStep(69335) == 3">
 
-				<If Condition="IsOnSubMap(3170)">	
+				<If Condition="IsOnSubMap(3170)">
 					<MoveTo XYZ="-85.57233,-19.01986,304.8951" />
 				</If>
 				<FlyTo XYZ="-522.0703,0.3572204,229.9104" />
@@ -1745,7 +1745,7 @@ Requires: ExBuddy.
 			</If>
 
 			<If Condition="GetQuestStep(69335) == 255">
-				<If Condition="not IsOnSubMap(3472)">	
+				<If Condition="not IsOnSubMap(3472)">
 					<TeleportTo Name="Fanow" AetheryteId="143" Force="True"/>
 					<FlyTo XYZ="791.0349, -45.83972, -202.5477" Land="True"/>
 				</If>
@@ -1764,7 +1764,7 @@ Requires: ExBuddy.
         _say = "/s 啦嘿";
 #else
         _say = "/s la-hee";
-#endif        
+#endif
         await CommonTasks.StopAndDismount();
         ChatManager.SendChat(_say);
       ]]>

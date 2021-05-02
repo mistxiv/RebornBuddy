@@ -244,7 +244,8 @@ Authors:  Sodimm.
       </If>
       <FlyTo XYZ="-96.20813, 1.3203735, -620.264" ArrivalTolerance="0.5" AllowedVariance="1.0" IgnoreIndoors="True"/>
 	  <SoUseSpell SpellId="4931" NpcId="2006646" UseDistance="5.0" XYZ="-96.20813, 0.3203735, -620.264" Condition="HasQuest(67709) and GetQuestStep(67709) == 2 and GetQuestById(67709).GetTodoArgs(2, 0).Item1 == 3"/>
-      <Dismount/>
+      <!-- <Dismount/> -->
+    <LisbethTravel ZoneId="401" XYZ="-102.9921, -13.65366, -620.4651"/>
     </If>
 	<If Condition="HasQuest(67709) and GetQuestStep(67709) == 255">
       <If Condition="not IsOnMap(401)">
@@ -287,6 +288,7 @@ Authors:  Sodimm.
       </If>
       <FlyTo XYZ="205.8899, -5.912354, -785.7023" ArrivalTolerance="0.5" AllowedVariance="1.0" IgnoreIndoors="True"/>
       <SoUseSpell SpellId="4931" NpcId="2006657" UseDistance="5.0" XYZ="205.8899, -6.912354, -785.7023" QuestId="67711" StepId="4"/>
+      <LisbethTravel ZoneId="401" XYZ="207.1298, -12.90924, -780.407"/>
       <Dismount/>
     </If>
     <If Condition="HasQuest(67711) and GetQuestStep(67711) == 255">
@@ -847,9 +849,9 @@ Authors:  Sodimm.
     <If Condition="HasQuest(67719) and GetQuestStep(67719) == 3">
       <If Condition="not IsOnMap(401)">
         <TeleportTo Name="Ok' Zundu" AetheryteId="73"/>
-        <FlyTo XYZ="834.3785, -97.81962, -734.51" ArrivalTolerance="0.5" AllowedVariance="1.0" Land="True" IgnoreIndoors="True"/>
+        <FlyTo XYZ="834.0286, -97.81962, -736.4077" ArrivalTolerance="0.5" AllowedVariance="1.0" Land="True" IgnoreIndoors="True"/>
       </If>
-      <TalkTo NpcId="1016223" XYZ="834.3785, -97.81962, -734.51" QuestId="67719" StepId="3"/>
+      <TalkTo NpcId="1016223" XYZ="834.0286, -97.81962, -736.4077" QuestId="67719" StepId="3"/>
     </If>
     <!-- Nailed Down -->
     <If Condition="HasQuest(67721) and GetQuestStep(67721) == 2">
@@ -971,7 +973,7 @@ Authors:  Sodimm.
     <If Condition="HasQuest(67726) and GetQuestStep(67726) == 2">
       <If Condition="not IsOnMap(401)">
         <TeleportTo Name="Ok' Zundu" AetheryteId="73"/>
-      </If>	  
+      </If>
       <FlyTo XYZ="-45.98569, -64.98451, 499.232" IgnoreIndoors="True"/>
       <FlyTo XYZ="72.92273, -88.39557, 428.8242" ArrivalTolerance="0.5" AllowedVariance="1.0" Land="True" IgnoreIndoors="True"/>
       <UseObject NpcIds="2006707,2006686" QuestId="67726" StepId="2">
@@ -986,28 +988,28 @@ Authors:  Sodimm.
       <If Condition="not IsOnMap(401)">
         <TeleportTo Name="Ok' Zundu" AetheryteId="73"/>
       </If>
-      <FlyTo XYZ="-830.3197, -14.35876, -131.8228" ArrivalTolerance="0.5" AllowedVariance="1.0" Land="True" IgnoreIndoors="True"/>
+      <LisbethTravel ZoneId="401" XYZ="-830.3197, -14.35876, -131.8228"/>
       <UseObject NpcId="2006689" XYZ="-830.3197, -14.35876, -131.8228" Condition="HasQuest(67727) and GetQuestStep(67727) == 2 and GetQuestById(67727).GetTodoArgs(2, 0).Item1 == 0"/>
     </If>
     <If Condition="HasQuest(67727) and GetQuestStep(67727) == 2 and GetQuestById(67727).GetTodoArgs(2, 0).Item1 == 1">
       <If Condition="not IsOnMap(401)">
         <TeleportTo Name="Ok' Zundu" AetheryteId="73"/>
       </If>
-      <FlyTo XYZ="-857.6333, 4.653992, -218.6771" ArrivalTolerance="0.5" AllowedVariance="1.0" Land="True" IgnoreIndoors="True"/>
+      <LisbethTravel ZoneId="401" XYZ="-857.6333, 4.653992, -218.6771"/>
       <UseObject NpcId="2006690" XYZ="-857.6333, 4.653992, -218.6771" Condition="HasQuest(67727) and GetQuestStep(67727) == 2 and GetQuestById(67727).GetTodoArgs(2, 0).Item1 == 1"/>
     </If>
     <If Condition="HasQuest(67727) and GetQuestStep(67727) == 2 and GetQuestById(67727).GetTodoArgs(2, 0).Item1 == 2">
       <If Condition="not IsOnMap(401)">
         <TeleportTo Name="Ok' Zundu" AetheryteId="73"/>
       </If>
-      <FlyTo XYZ="-715.1446, -58.6405, -342.3057" ArrivalTolerance="0.5" AllowedVariance="1.0" Land="True" IgnoreIndoors="True"/>
+      <LisbethTravel ZoneId="401" XYZ="-715.1446, -58.6405, -342.3057"/>
       <UseObject NpcId="2006688" XYZ="-715.1446, -58.6405, -342.3057" Condition="HasQuest(67727) and GetQuestStep(67727) == 2 and GetQuestById(67727).GetTodoArgs(2, 0).Item1 == 2"/>
     </If>
     <If Condition="HasQuest(67727) and GetQuestStep(67727) == 2 and GetQuestById(67727).GetTodoArgs(2, 0).Item1 == 3">
       <If Condition="not IsOnMap(401)">
         <TeleportTo Name="Ok' Zundu" AetheryteId="73"/>
       </If>
-      <FlyTo XYZ="-553.9788, -58.42682, -271.1071" ArrivalTolerance="0.5" AllowedVariance="1.0" Land="True" IgnoreIndoors="True"/>
+      <LisbethTravel ZoneId="401" XYZ="-553.9788, -58.42682, -271.1071"/>
       <UseObject NpcId="2006687" XYZ="-553.9788, -58.42682, -271.1071" Condition="HasQuest(67727) and GetQuestStep(67727) == 2 and GetQuestById(67727).GetTodoArgs(2, 0).Item1 == 3"/>
     </If>
     <!-- Gaelcat's Out The Bag -->
@@ -1015,27 +1017,27 @@ Authors:  Sodimm.
       <If Condition="not IsOnMap(401)">
         <TeleportTo Name="Ok' Zundu" AetheryteId="73"/>
       </If>
-      <FlyTo XYZ="-333.7911, -184.9745, 625.1162" ArrivalTolerance="0.5" AllowedVariance="1.0" Land="True" IgnoreIndoors="True"/>
+      <LisbethTravel ZoneId="401" XYZ="-333.7911, -184.9745, 625.1162"/>
 	  <UseItem ItemId="2001934" NpcId="1016231" XYZ="-333.7911, -184.9745, 625.1162" Condition="HasQuest(67728) and GetQuestStep(67728) == 2 and GetQuestById(67728).GetTodoArgs(2, 0).Item1 == 0"/>
 	</If>
     <If Condition="HasQuest(67728) and GetQuestStep(67728) == 2 and GetQuestById(67728).GetTodoArgs(2, 0).Item1 == 1">
       <If Condition="not IsOnMap(401)">
         <TeleportTo Name="Ok' Zundu" AetheryteId="73"/>
       </If>
-      <FlyTo XYZ="-452.1096, -187.396, 734.1877" ArrivalTolerance="0.5" AllowedVariance="1.0" Land="True" IgnoreIndoors="True"/>
+      <LisbethTravel ZoneId="401" XYZ="-452.1096, -187.396, 734.1877"/>
 	  <UseItem ItemId="2001934" NpcId="1016232" XYZ="-452.1096, -187.396, 734.1877" Condition="HasQuest(67728) and GetQuestStep(67728) == 2 and GetQuestById(67728).GetTodoArgs(2, 0).Item1 == 1"/>
 	</If>
     <If Condition="HasQuest(67728) and GetQuestStep(67728) == 2 and GetQuestById(67728).GetTodoArgs(2, 0).Item1 == 2">
       <If Condition="not IsOnMap(401)">
         <TeleportTo Name="Ok' Zundu" AetheryteId="73"/>
       </If>
-      <FlyTo XYZ="-359.823, -184.9545, 796.7192" ArrivalTolerance="0.5" AllowedVariance="1.0" Land="True" IgnoreIndoors="True"/>
+      <LisbethTravel ZoneId="401" XYZ="-359.823, -184.9545, 796.7192"/>
 	  <UseItem ItemId="2001934" NpcId="1016233" XYZ="-359.823, -184.9545, 796.7192" Condition="HasQuest(67728) and GetQuestStep(67728) == 2 and GetQuestById(67728).GetTodoArgs(2, 0).Item1 == 2"/>
 	</If>
     <If Condition="HasQuest(67728) and GetQuestStep(67728) == 2 and GetQuestById(67728).GetTodoArgs(2, 0).Item1 == 3">
       <If Condition="not IsOnMap(401)">
         <TeleportTo Name="Ok' Zundu" AetheryteId="73"/>
-        <FlyTo XYZ="-343.0076, -161.8661, 770.0159" ArrivalTolerance="0.5" AllowedVariance="1.0" Land="True" IgnoreIndoors="True"/>
+        <LisbethTravel ZoneId="401" XYZ="-343.0076, -161.8661, 770.0159"/>
       </If>
 	  <UseItem ItemId="2001934" NpcId="1016374" XYZ="-343.0076, -161.8661, 770.0159" Condition="HasQuest(67728) and GetQuestStep(67728) == 2 and GetQuestById(67728).GetTodoArgs(2, 0).Item1 == 3"/>
 	</If>
@@ -1043,7 +1045,7 @@ Authors:  Sodimm.
       <If Condition="not IsOnMap(401)">
         <TeleportTo Name="Ok' Zundu" AetheryteId="73"/>
       </If>
-      <FlyTo XYZ="-627.8936, -149.9529, 480.1556" ArrivalTolerance="0.5" AllowedVariance="1.0" Land="True" IgnoreIndoors="True"/>
+      <LisbethTravel ZoneId="401" XYZ="-627.8936, -149.9529, 480.1556"/>
 	  <UseItem ItemId="2001934" NpcId="1016375" XYZ="-627.8936, -149.9529, 480.1556" Condition="HasQuest(67728) and GetQuestStep(67728) == 2 and GetQuestById(67728).GetTodoArgs(2, 0).Item1 == 4"/>
 	</If>
     <!-- Rotten To The Korrigan -->
@@ -1443,7 +1445,7 @@ Authors:  Sodimm.
         <If Condition="not IsOnMap(401)">
           <TeleportTo Name="Ok' Zundu" AetheryteId="73"/>
         </If>
-        <FlyTo XYZ="-15.12177, 168.017, -100.4502" ArrivalTolerance="0.5" AllowedVariance="1.0" Land="True"/>
+        <LisbethTravel ZoneId="401" XYZ="-15.12177, 168.017, -100.4502" ArrivalTolerance="0.5" AllowedVariance="1.0" Land="True"/>
         <UseObject NpcId="2006633" XYZ="-15.12177, 168.017, -100.4502" QuestId="67704" StepId="1"/>
 	      <RunCode Name="67704"/>
       </If>
@@ -1489,7 +1491,7 @@ Authors:  Sodimm.
       <If Condition="HasQuest(67705) and not IsQuestCompleted(67705) and GetQuestStep(67705) == 2">
         <If Condition="not IsOnMap(401)">
           <GetTo ZoneId="401" XYZ="-606.4088, -51.07104, -370.8705"/>
-        </If>  
+        </If>
         <TalkTo NpcId="1016174" XYZ="-606.4088, -51.07104, -370.8705" QuestId="67705" StepId="2"/>
       </If>
       <If Condition="HasQuest(67705) and not IsQuestCompleted(67705) and GetQuestStep(67705) == 3">
@@ -1604,33 +1606,33 @@ Authors:  Sodimm.
         var p2 = new ff14bot.Pathing.FlyToParameters(v2) { CheckIndoors = false };
         var p3 = new ff14bot.Pathing.FlyToParameters(v3) { CheckIndoors = false };
         var p4 = new ff14bot.Pathing.FlyToParameters(v4) { CheckIndoors = false };
-  
+
         if (!Core.Player.IsMounted)  {  await CommonTasks.SummonFlyingMount();  }
-  
+
         while (Core.Player.Location.Distance(v1) > 3f)
         {
            ff14bot.Pathing.Flightor.MoveTo(p1);
            await Coroutine.Yield();
         }
-  
+
         while (Core.Player.Location.Distance(v2) > 3f)
         {
            ff14bot.Pathing.Flightor.MoveTo(p2);
            await Coroutine.Yield();
         }
-  
+
         while (Core.Player.Location.Distance(v3) > 3f)
         {
            ff14bot.Pathing.Flightor.MoveTo(p3);
            await Coroutine.Yield();
         }
-  
+
         while (Core.Player.Location.Distance(v4) > 2f)
         {
            ff14bot.Pathing.Flightor.MoveTo(p4);
            await Coroutine.Yield();
         }
-    
+
         await CommonTasks.StopAndDismount();
       ]]>
     </CodeChunk>
@@ -1640,10 +1642,10 @@ Authors:  Sodimm.
         var p1 = new ff14bot.Pathing.FlyToParameters(v1) { CheckIndoors = false };
 
         if (!Core.Player.IsMounted)  {  await CommonTasks.SummonFlyingMount();  }
-    
+
         await CommonTasks.TakeOff();
-        await CommonTasks.AscendTo(171f);		
-        MovementManager.MoveStop();		
+        await CommonTasks.AscendTo(171f);
+        MovementManager.MoveStop();
 
         while (Core.Player.Location.Distance(v1) > 3f)
         {
@@ -1655,17 +1657,17 @@ Authors:  Sodimm.
     <CodeChunk Name="67705">
       <![CDATA[
         if (Core.Player.IsMounted)  {  await CommonTasks.StopAndDismount();  }
-		
+
 		await Coroutine.Sleep(2000);
 
         ChatManager.SendChat("/dance");
-		
+
         while (ConditionParser.GetQuestStep(67705) == 6)
         {
           if (Talk.DialogOpen)  {  Talk.Next();  }
           await Coroutine.Yield();
         }
-    
+
         while (ConditionParser.GetQuestStep(67705) == 3)
         {
           if (Talk.DialogOpen)  {  Talk.Next();  }
@@ -1683,25 +1685,25 @@ Authors:  Sodimm.
         var p2 = new ff14bot.Pathing.FlyToParameters(v2) { CheckIndoors = false };
         var p3 = new ff14bot.Pathing.FlyToParameters(v3) { CheckIndoors = false };
         var p4 = new ff14bot.Pathing.FlyToParameters(v4) { CheckIndoors = false };
-  
+
         while (Core.Player.Location.Distance(v1) > 3f)
         {
            ff14bot.Pathing.Flightor.MoveTo(p1);
            await Coroutine.Yield();
         }
-  
+
         while (Core.Player.Location.Distance(v2) > 3f)
         {
            ff14bot.Pathing.Flightor.MoveTo(p2);
            await Coroutine.Yield();
         }
-  
+
         while (Core.Player.Location.Distance(v3) > 3f)
         {
            ff14bot.Pathing.Flightor.MoveTo(p3);
            await Coroutine.Yield();
         }
-  
+
         while (Core.Player.Location.Distance(v4) > 3f)
         {
            ff14bot.Pathing.Flightor.MoveTo(p4);
@@ -1715,10 +1717,10 @@ Authors:  Sodimm.
         var p1 = new ff14bot.Pathing.FlyToParameters(v1) { CheckIndoors = false };
 
         if (!Core.Player.IsMounted)  {  await CommonTasks.SummonFlyingMount();  }
-    
+
         await CommonTasks.TakeOff();
-        await CommonTasks.AscendTo(-25f);		
-        MovementManager.MoveStop();		
+        await CommonTasks.AscendTo(-25f);
+        MovementManager.MoveStop();
 
         while (Core.Player.Location.Distance(v1) > 3f)
         {
@@ -1733,10 +1735,10 @@ Authors:  Sodimm.
         var p1 = new ff14bot.Pathing.FlyToParameters(v1) { CheckIndoors = false };
 
         if (!Core.Player.IsMounted)  {  await CommonTasks.SummonFlyingMount();  }
-    
+
         await CommonTasks.TakeOff();
-        await CommonTasks.AscendTo(169f);		
-        MovementManager.MoveStop();		
+        await CommonTasks.AscendTo(169f);
+        MovementManager.MoveStop();
 
         while (Core.Player.Location.Distance(v1) > 3f)
         {

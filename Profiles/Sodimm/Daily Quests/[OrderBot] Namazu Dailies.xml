@@ -372,7 +372,7 @@ Authors:  Sodimm, TuckMeIntoBread
 
 
 					<GetTo ZoneId="622" XYZ="-764.4707, 127.4369, 92.14957"/>
-					<TurnIn QuestId="68633" ItemId="22668" NpcId="1025699" XYZ="-765.3163, 127.4411, 90.92847"/>					
+					<TurnIn QuestId="68633" ItemId="22668" NpcId="1025699" XYZ="-765.3163, 127.4411, 90.92847"/>
 				</If>
 
 				<If Condition="ClassName != ClassJobType.Fisher">
@@ -645,7 +645,7 @@ Authors:  Sodimm, TuckMeIntoBread
 								</While>
 							</If>
 							<If Condition="ClassName == ClassJobType.Blacksmith">
-								<Synthesize RecipeId="32722"/>
+								<p></p>Synthesize RecipeId="32722"/>
 								<While Condition="CraftingManager.IsCrafting">
 									<CraftAction Name="Basic Synthesis" ActionId="100015"/>
 								</While>
@@ -1058,9 +1058,9 @@ Authors:  Sodimm, TuckMeIntoBread
 									<FishSpot XYZ="129.318,5.236872,47.66246" Heading="6.137196" />
 								</FishSpots>
 							</Fish>
-						</If>	
+						</If>
 						<FlyTo XYZ="199.7201, 13.99777, 126.2199" Land="True"/>
-						<HandOver ItemId="22678" NpcId="1025779" XYZ="193.0419, 13.04057, 120.1953" QuestId="68645" StepId="2"/>					
+						<HandOver ItemId="22678" NpcId="1025779" XYZ="193.0419, 13.04057, 120.1953" QuestId="68645" StepId="2"/>
 
 					</If>
 					<If Condition="ClassName != ClassJobType.Fisher">
@@ -1901,7 +1901,7 @@ Authors:  Sodimm, TuckMeIntoBread
 									<FishSpot XYZ="129.318,5.236872,47.66246" Heading="6.137196" />
 								</FishSpots>
 							</Fish>
-						</If>	
+						</If>
 					</If>
 
 					<If Condition="ClassName != ClassJobType.Fisher">
@@ -2557,7 +2557,7 @@ Authors:  Sodimm, TuckMeIntoBread
 				</If>
 				<!-- A Welcome Surprise -->
 				<If Condition="GetQuestStep(68664) == 1">
-				
+
 					<If Condition="ClassName == ClassJobType.Fisher">
 						<If Condition="not HasItem(22692)">
 							<FlyTo XYZ="-174.399, 31.70509, -169.7479" Land="True"/>
@@ -2568,7 +2568,7 @@ Authors:  Sodimm, TuckMeIntoBread
 							</Fish>
 						</If>
 					</If>
-				
+
 					<FlyTo XYZ="-55.98541, 114.905, -19.08911" Land="True"/>
 					<TalkTo NpcId="1025828" XYZ="-55.98541, 114.905, -19.08911" QuestId="68664" StepId="1"/>
 				</If>
@@ -3843,42 +3843,42 @@ Authors:  Sodimm, TuckMeIntoBread
 		<CodeChunk Name="68284">
 			<![CDATA[
         if (Core.Me.IsMounted)  {  await CommonTasks.StopAndDismount();  }
-        
+
         MovementManager.StartDescending();
         await Coroutine.Wait(-1, () => MovementManager.IsDiving);
 
         MovementManager.MoveStop();
-    
+
         if (!Core.Me.IsMounted)  {  await CommonTasks.SummonFlyingMount();  }
-     
+
         await CommonTasks.DescendTo(-109f);
-     
+
         await CommonTasks.StopAndDismount();
 
         var _obj = GameObjectManager.GetObjectByNPCId(2008799);
-         
+
         if (_obj.IsVisible)
         {
           GameObjectManager.GetObjectByNPCId(2008799).Target();
           GameObjectManager.GetObjectByNPCId(2008799).Interact();
         }
-        
+
         while (ConditionParser.GetQuestStep(68284) != 4)
         {
           if (Talk.DialogOpen)  {  Talk.Next();  }
           await Coroutine.Yield();
         }
-     
+
         await Coroutine.Sleep(2000);
-  
+
         if (ConditionParser.GetQuestStep(68284) == 4 && MovementManager.IsDiving)
         {
           if (!Core.Me.IsMounted)  {  await CommonTasks.SummonFlyingMount();  }
-         
+
           MovementManager.StartAscending();
           await Coroutine.Wait(-1, () => !MovementManager.IsDiving);
         }
-     
+
         await CommonTasks.StopAndDismount();
       ]]>
 		</CodeChunk>
@@ -3902,7 +3902,7 @@ Authors:  Sodimm, TuckMeIntoBread
         _say = "/s 大鲶鱼保佑";
 #else
         _say = "/s his whiskers";
-#endif     
+#endif
         ChatManager.SendChat(_say);
         await Coroutine.Sleep(2000);
 

@@ -50,7 +50,7 @@ Authors:  Sodimm.
     <If Condition="GetQuestStep(66789) == 255">
       <GetTo ZoneId="152" XYZ="46.3531, 6.073428, 249.0289"/>
       <TurnIn QuestId="66789" NpcId="1005564" XYZ="48.20313, 6.07347, 247.7913"/>
-    </If>    
+    </If>
 	<If Condition="not HasAtLeastOneQuest(Array[int]([66793,66794,66795,66796,66797,66798,66799,66800,66801,66802,66803,66804,66805,66806,66807,66808,66809,66810,66811,66812,66813,66814,66815,66816,66817,66818,66819,66820,66821,66822]))">
       <!-- Rank 3 -->
       <!-- Ripe for the Picking -->
@@ -1676,7 +1676,7 @@ Authors:  Sodimm.
           await Coroutine.Sleep(500);
         }
       ]]></CodeChunk>
-    <CodeChunk Name="66878a"><![CDATA[ 
+    <CodeChunk Name="66878a"><![CDATA[
         if (Core.Player.IsMounted)
         {
           ff14bot.Managers.ActionManager.Dismount();
@@ -1689,7 +1689,7 @@ Authors:  Sodimm.
         await Coroutine.Sleep(3000);
         ff14bot.Managers.MovementManager.MoveForwardStop();
       ]]></CodeChunk>
-    <CodeChunk Name="66878b"><![CDATA[ 
+    <CodeChunk Name="66878b"><![CDATA[
         ff14bot.Managers.MovementManager.SetFacing(3.207531f);
         ff14bot.Managers.MovementManager.MoveForwardStart();
         await Coroutine.Sleep(1500);

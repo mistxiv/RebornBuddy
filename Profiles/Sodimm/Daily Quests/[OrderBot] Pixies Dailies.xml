@@ -207,12 +207,12 @@ Authors:  Mastahg, Sodimm
       </If>
       <If Condition="HasAtLeastOneQuest(Array[int]([&dailyIds;]))">
         <TeleportTo Name="Lydha Lran" AetheryteId="144"/>
-		<If Condition="GetQuestStep(69234) == 1 or GetQuestStep(69250) == 1">
+    <If Condition="GetQuestStep(69234) == 1 or GetQuestStep(69250) == 1">
           <TalkTo NpcId="1031811" XYZ="-442.4659, 70.68616, 573.6934"/>
-		</If>
+    </If>
         <!-- Porxine Perfection -->
         <If Condition="GetQuestStep(69234) == 2">
-		  <If Condition="GetQuestById(69234).GetTodoArgs(2, 0).Item1 == 0">
+      <If Condition="GetQuestById(69234).GetTodoArgs(2, 0).Item1 == 0">
             <If Condition="Array[int]([1, 2]).Contains(GetQuestById(69234).QuestI8CH)">
               <FlyTo XYZ="-850.1474,36.13097,299.2457" ArrivalTolerance="0.5" AllowedVariance="1.0"/>
               <SoUseSpell SpellId="18187" NpcId="2010891" UseDistance="5.0" XYZ="-852.0485,37.67456,298.1155" Condition="GetQuestById(69234).GetTodoArgs(2, 0).Item1 == 0"/>
@@ -222,7 +222,7 @@ Authors:  Mastahg, Sodimm
               <SoUseSpell SpellId="18187" NpcId="2010892" UseDistance="5.0" XYZ="-774.2247, 53.85721, 105.7065" Condition="GetQuestById(69234).GetTodoArgs(2, 0).Item1 == 0"/>
             </If>
           </If>
-		  <If Condition="GetQuestById(69234).GetTodoArgs(2, 0).Item1 == 1">
+      <If Condition="GetQuestById(69234).GetTodoArgs(2, 0).Item1 == 1">
             <If Condition="GetQuestById(69234).QuestI8CH == 1">
               <FlyTo XYZ="-774.2247, 53.85721, 105.7065" ArrivalTolerance="0.5" AllowedVariance="1.0"/>
               <SoUseSpell SpellId="18187" NpcId="2010892" UseDistance="5.0" XYZ="-774.2247, 53.85721, 105.7065" Condition="GetQuestById(69234).GetTodoArgs(2, 0).Item1 == 1"/>
@@ -231,7 +231,7 @@ Authors:  Mastahg, Sodimm
               <FlyTo XYZ="-801.7984, 25.28642, -106.4932" ArrivalTolerance="0.5" AllowedVariance="1.0"/>
               <SoUseSpell SpellId="18187" NpcId="2010893" UseDistance="5.0" XYZ="-802.3041,27.11523,-108.4459" Condition="GetQuestById(69234).GetTodoArgs(2, 0).Item1 == 1"/>
             </If>
-          </If>		
+          </If>
           <Dismount/>
         </If>
         <!-- Snot My Problem -->
@@ -354,7 +354,7 @@ Authors:  Mastahg, Sodimm
         <!-- Pebble without a Cause -->
         <If Condition="GetQuestStep(69240) == 1">
           <FlyTo XYZ="-398.7063, -0.4, -5.116957"/>
-          <UseObject NpcIds="2010901,2010902,2010903" XYZ="-395.4681, -0.07635498, -0.1679077" QuestId="69240" Step="1"/>
+          <UseObject NpcIds="2010901,2010902,2010903" XYZ="-395.4681, -0.07635498, -0.1679077" Radius="100" QuestId="69240" Step="1"/>
         </If>
         <!-- There's Always a Stupider Fish -->
         <If Condition="GetQuestStep(69241) == 1">
@@ -379,7 +379,7 @@ Authors:  Mastahg, Sodimm
         <!-- Not the Beavers -->
         <If Condition="GetQuestStep(69243) == 1">
           <FlyTo XYZ="23.83244, 14.05823, 751.1464" Land="True"/>
-		  <RunCode Name="Announce_Manual_Completion"/>
+      <RunCode Name="Announce_Manual_Completion"/>
           <WaitWhile Condition="not GetQuestStep(69243) == 255"/>
         </If>
         <!-- The Once and Future Marchioness -->
@@ -844,7 +844,7 @@ Authors:  Mastahg, Sodimm
         _say = "/s 超级小可爱";
 #else
         _say = "/s snae ling";
-#endif        
+#endif
         var positionDictionary = new Dictionary<uint,Vector3>()
         {
           {1032140,new Vector3("-459.8917,42.65948,-305.7145")},
@@ -887,7 +887,7 @@ Authors:  Mastahg, Sodimm
         _say = "/s 河狸";
 #else
         _say = "/s Beaver";
-#endif        
+#endif
         var concealedPixie = GameObjectManager.GetObjectByNPCId(1032208);
         await CommonTasks.StopAndDismount();
 
@@ -901,7 +901,7 @@ Authors:  Mastahg, Sodimm
       ]]>
     </CodeChunk>
     <CodeChunk Name="69230">
-      <![CDATA[				
+      <![CDATA[
         var diveToLocation = new Vector3("-328.463,-50.55911,-254.9518");
         var houseLocation = new Vector3("-337.0634,-53.65659,-277.9061");
 
@@ -947,7 +947,7 @@ Authors:  Mastahg, Sodimm
         }
 
         Navigator.PlayerMover.MoveStop();
-        
+
         if (GameObjectManager.GetObjectByNPCId(activeId).IsVisible)  {  GameObjectManager.GetObjectByNPCId(activeId).Interact();  }
 
         while (ConditionParser.GetQuestStep(69230) != 255)
@@ -960,14 +960,14 @@ Authors:  Mastahg, Sodimm
         if (activeId == 2010866)
         {
           var exitLoc = new Vector3("-332.3985,-53.90364,-260.3446");
-          
+
           while (Core.Me.Distance(exitLoc) > 1f)
           {
             Navigator.PlayerMover.MoveTowards(exitLoc);
             await Coroutine.Yield();
           }
         }
-        
+
         Navigator.PlayerMover.MoveStop();
       ]]>
     </CodeChunk>

@@ -38,49 +38,49 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
     </If>
     <While Condition="HasQuest(67856) and not IsQuestCompleted(67856) and GetQuestStep(67856) == 4 and not HasAtLeast(15720,1)">
       <!-- Fake Kupo Nut -->
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="31591"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="31617"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="31643"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="31669"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="31695"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="31721"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100060"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="31747"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="31773"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100105"/>
@@ -246,49 +246,49 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
     </If>
     <While Condition="GetQuestStep(67826) == 2 and not HasAtLeast(15725,3)">
       <!-- Training Supplies -->
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="31596"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="31622"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="31648"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="31674"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="31700"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="31726"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100060"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="31752"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="31778"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100105"/>
@@ -336,49 +336,49 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
     </If>
     <While Condition="GetQuestStep(67827) == 255 and not HasAtLeast(15726,3)">
       <!-- Repurposed Construction Component -->
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="31597"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="31623"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="31649"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="31675"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="31701"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="31727"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100060"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="31753"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="31779"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100105"/>
@@ -412,49 +412,49 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
     </If>
     <While Condition="GetQuestStep(67828) == 255 and not HasAtLeast(15727,2)">
       <!-- Foundation Component -->
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="31598"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="31624"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="31650"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="31676"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="31702"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="31728"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100060"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="31754"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="31780"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100105"/>
@@ -502,49 +502,49 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
     </If>
     <While Condition="GetQuestStep(67829) == 4 and not HasAtLeast(15728,3)">
       <!-- Basket Component -->
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="31599"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="31625"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="31651"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="31677"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="31703"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="31729"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100060"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="31755"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="31781"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100105"/>
@@ -590,49 +590,49 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
       <HandOver ItemId="2001986" NpcId="1017364" XYZ="517.7092, -11.3913, 82.85227" QuestId="67830" StepId="3"/>
     </If>
     <While Condition="GetQuestStep(67830) == 255 and not HasAtLeast(15729,3)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="31600"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="31626"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="31652"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="31678"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="31704"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="31730"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100060"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="31756"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="31782"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100105"/>
@@ -648,28 +648,28 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
         <TeleportTo Name="Zenith" AetheryteId="79"/>
       </If>
       <FlyTo XYZ="450.8782, -5.898187, 649.6019" ArrivalTolerance="0.5" AllowedVariance="1.0" Land="True" IgnoreIndoors="True"/>
-	  <EmoteNPC Emote="s free kupo nuts" NpcId="1017368" XYZ="450.8782, -5.898187, 649.6019" BlacklistAfter="True" Condition="HasQuest(67831) and GetQuestStep(67831) == 1 and GetQuestById(67831).GetTodoArgs(1, 0).Item1 == 0"/>
+    <EmoteNPC Emote="s free kupo nuts" NpcId="1017368" XYZ="450.8782, -5.898187, 649.6019" BlacklistAfter="True" Condition="HasQuest(67831) and GetQuestStep(67831) == 1 and GetQuestById(67831).GetTodoArgs(1, 0).Item1 == 0"/>
     </If>
     <If Condition="HasQuest(67831) and GetQuestStep(67831) == 1 and GetQuestById(67831).GetTodoArgs(1, 0).Item1 == 1">
       <If Condition="not IsOnMap(400)">
         <TeleportTo Name="Zenith" AetheryteId="79"/>
         <FlyTo XYZ="484.3187, -7.777609, 716.6257" ArrivalTolerance="0.5" AllowedVariance="1.0" Land="True" IgnoreIndoors="True"/>
       </If>
-	  <EmoteNPC Emote="s free kupo nuts" NpcId="1017367" XYZ="484.3187, -7.777609, 716.6257" BlacklistAfter="True" Condition="HasQuest(67831) and GetQuestStep(67831) == 1 and GetQuestById(67831).GetTodoArgs(1, 0).Item1 == 1"/>
+    <EmoteNPC Emote="s free kupo nuts" NpcId="1017367" XYZ="484.3187, -7.777609, 716.6257" BlacklistAfter="True" Condition="HasQuest(67831) and GetQuestStep(67831) == 1 and GetQuestById(67831).GetTodoArgs(1, 0).Item1 == 1"/>
     </If>
     <If Condition="HasQuest(67831) and GetQuestStep(67831) == 1 and GetQuestById(67831).GetTodoArgs(1, 0).Item1 == 2">
       <If Condition="not IsOnMap(400)">
         <TeleportTo Name="Zenith" AetheryteId="79"/>
       </If>
       <FlyTo XYZ="295.0609, -47.24789, 671.3457" ArrivalTolerance="0.5" AllowedVariance="1.0" Land="True" IgnoreIndoors="True"/>
-	  <EmoteNPC Emote="s free kupo nuts" NpcId="1017366" XYZ="295.0609, -47.24789, 671.3457" BlacklistAfter="True" Condition="HasQuest(67831) and GetQuestStep(67831) == 1 and GetQuestById(67831).GetTodoArgs(1, 0).Item1 == 2"/>
+    <EmoteNPC Emote="s free kupo nuts" NpcId="1017366" XYZ="295.0609, -47.24789, 671.3457" BlacklistAfter="True" Condition="HasQuest(67831) and GetQuestStep(67831) == 1 and GetQuestById(67831).GetTodoArgs(1, 0).Item1 == 2"/>
     </If>
     <If Condition="HasQuest(67831) and GetQuestStep(67831) == 1 and GetQuestById(67831).GetTodoArgs(1, 0).Item1 == 3">
       <If Condition="not IsOnMap(400)">
         <TeleportTo Name="Zenith" AetheryteId="79"/>
         <FlyTo XYZ="254.7876, -43.72188, 637.8293" ArrivalTolerance="0.5" AllowedVariance="1.0" Land="True" IgnoreIndoors="True"/>
       </If>
-	  <EmoteNPC Emote="s free kupo nuts" NpcId="1017365" XYZ="254.7876, -43.72188, 637.8293" BlacklistAfter="True" Condition="HasQuest(67831) and GetQuestStep(67831) == 1 and GetQuestById(67831).GetTodoArgs(1, 0).Item1 == 3"/>
+    <EmoteNPC Emote="s free kupo nuts" NpcId="1017365" XYZ="254.7876, -43.72188, 637.8293" BlacklistAfter="True" Condition="HasQuest(67831) and GetQuestStep(67831) == 1 and GetQuestById(67831).GetTodoArgs(1, 0).Item1 == 3"/>
     </If>
     <!-- Work That Mallow ** -->
     <If Condition="HasQuest(67832) and GetQuestStep(67832) == 1">
@@ -681,49 +681,49 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
     </If>
     <While Condition="GetQuestStep(67832) == 2 and not HasAtLeast(15730,3)">
       <!-- Gathering Tool Components -->
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="31601"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="31627"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="31653"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="31679"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="31705"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="31731"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100060"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="31757"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="31783"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100105"/>
@@ -777,7 +777,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
     </If>
     <While Condition="GetQuestStep(67834) == 2 and not HqHasAtLeast(15731,1)">
       <!-- Veneer Component -->
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="31602"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -794,7 +794,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="31628"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -811,7 +811,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="31654"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -828,7 +828,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="31680"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -845,7 +845,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="31706"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -862,7 +862,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="31732"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -879,7 +879,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="31758"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -896,7 +896,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="31784"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -934,49 +934,49 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
     </If>
     <While Condition="GetQuestStep(67835) == 2 and not HasAtLeast(15732,2)">
       <!-- Aetheric Shielding -->
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="31603"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="31629"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="31655"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="31681"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="31707"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="31733"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100060"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="31759"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="31785"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100105"/>
@@ -1003,7 +1003,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
     </If>
     <While Condition="GetQuestStep(67836) == 2 and not HqHasAtLeast(15733,1)">
       <!-- Stonemasonry Supplies -->
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="31604"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1020,7 +1020,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="31630"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1037,7 +1037,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="31656"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1054,7 +1054,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="31682"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1071,7 +1071,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="31708"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1088,7 +1088,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="31734"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1105,7 +1105,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="31760"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1122,7 +1122,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="31786"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1167,7 +1167,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
     </If>
     <While Condition="GetQuestStep(67837) == 2 and not HqHasAtLeast(15734,1)">
       <!-- Exploding Kupo Nut -->
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="31605"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1184,7 +1184,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="31631"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1201,7 +1201,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="31657"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1218,7 +1218,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="31683"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1235,7 +1235,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="31709"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1252,7 +1252,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="31735"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1269,7 +1269,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="31761"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1286,7 +1286,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="31787"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1374,7 +1374,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
     </If>
     <While Condition="HasQuest(67839) and GetQuestStep(67839) == 2 and not HqHasAtLeast(15735,2)">
       <!-- Austere Offerings -->
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="31606"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1391,7 +1391,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="31632"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1408,7 +1408,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="31658"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1425,7 +1425,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="31684"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1442,7 +1442,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="31710"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1459,7 +1459,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="31736"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1476,7 +1476,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="31762"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1493,7 +1493,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="31788"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1538,49 +1538,49 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
     </If>
     <While Condition="GetQuestStep(67840) == 3 and not HasAtLeast(15736,3)">
       <!-- Shearing Machine Component -->
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="31607"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="31633"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="31659"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="31685"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="31711"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="31737"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100060"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="31763"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="31789"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100105"/>
@@ -1634,7 +1634,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
     </If>
     <While Condition="GetQuestStep(67841) == 5 and not HqHasAtLeast(15737,1)">
       <!-- Water Filter Component -->
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="31608"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1651,7 +1651,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="31634"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1668,7 +1668,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="31660"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1685,7 +1685,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="31686"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1702,7 +1702,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="31712"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1719,7 +1719,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="31738"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1736,7 +1736,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="31764"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1753,7 +1753,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="31790"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1824,49 +1824,49 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
     </If>
     <While Condition="GetQuestStep(67843) == 2 and not HasAtLeast(15738,3)">
       <!-- Mogstew Miscellany -->
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="31609"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="31635"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="31661"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="31687"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="31713"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="31739"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100060"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="31765"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="31791"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100105"/>
@@ -1974,7 +1974,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
     </If>
     <While Condition="GetQuestStep(67846) == 3 and not HqHasAtLeast(15739,1)">
       <!-- Moogle Statuette -->
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="31610"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1991,7 +1991,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="31636"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -2008,7 +2008,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="31662"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -2025,7 +2025,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="31688"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -2042,7 +2042,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="31714"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -2059,7 +2059,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="31740"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -2076,7 +2076,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="31766"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -2093,7 +2093,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="31792"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -2145,49 +2145,49 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
     </If>
     <While Condition="GetQuestStep(67847) == 4 and not HasAtLeast(15740,3)">
       <!-- Makeshift Toy Airship -->
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="31611"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="31637"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="31663"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="31689"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="31715"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="31741"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100060"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="31767"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="31793"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100105"/>
@@ -2271,49 +2271,49 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
     </If>
     <While Condition="GetQuestStep(67849) == 4 and not HasAtLeast(15741,3)">
       <!-- Dragonscale Rasp -->
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="31612"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="31638"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="31664"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="31690"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="31716"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="31742"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100060"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="31768"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="31794"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100105"/>
@@ -2347,7 +2347,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
     </If>
     <While Condition="GetQuestStep(67850) == 3 and not HqHasAtLeast(15742,1)">
       <!-- Cloudfish Lure -->
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="31613"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -2364,7 +2364,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="31639"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -2381,7 +2381,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="31665"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -2398,7 +2398,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="31691"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -2415,7 +2415,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="31717"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -2432,7 +2432,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="31743"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -2449,7 +2449,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="31769"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -2466,7 +2466,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="31795"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -2569,49 +2569,49 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
     </If>
     <While Condition="GetQuestStep(67852) == 3 and not HasAtLeast(15743,3)">
       <!-- Ishgardian Cuisine Miscellany -->
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="31614"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="31640"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="31666"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="31692"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="31718"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="31744"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100060"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="31770"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="31796"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100105"/>
@@ -2659,49 +2659,49 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
     </If>
     <While Condition="GetQuestStep(67853) == 2 and not HasAtLeast(15744,2)">
       <!-- Treadwheel Crane Component -->
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="31615"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="31641"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="31667"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="31693"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="31719"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="31745"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100060"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="31771"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="31797"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100105"/>
@@ -2756,7 +2756,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
     </If>
     <While Condition="GetQuestStep(67854) == 6 and not HqHasAtLeast(15745,1)">
       <!-- Moogle Mollifier -->
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="31616"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -2773,7 +2773,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="31642"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -2790,7 +2790,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="31668"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -2807,7 +2807,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="31694"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -2824,7 +2824,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="31720"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -2841,7 +2841,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="31746"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -2858,7 +2858,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="31772"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -2875,7 +2875,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="31798"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -2917,7 +2917,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
         <FlyTo XYZ="-353.9962, 61.13389, 302.585" ArrivalTolerance="0.5" AllowedVariance="1.0" Land="True" IgnoreIndoors="True"/>
         <TalkTo NpcId="1017470" XYZ="-353.9962, 61.13389, 302.585"/>
       </If>
-	  <RunCode Name="67855"/>	
+    <RunCode Name="67855"/>
       <SoUseSpell SpellId="6293" NpcId="2007283" UseDistance="5.0" XYZ="-177.8745, 53.05554, 53.66589" QuestId="67855" StepId="2"/>
     </If>
     <If Condition="HasQuest(67855) and GetQuestStep(67855) == 3">
@@ -2933,7 +2933,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
     <If Condition="not HasQuest(67856) and not HasQuest(67857) and not HasQuest(67858) and not HasQuest(67859) and not HasQuest(67860) and not HasQuest(67861) and HasAtLeastOneQuest(Array[int]([67826,67827,67828,67829,67830,67831,67832,67833,67834,67835,67836,67837,67838,67839,67840,67841,67842,67843,67844,67845,67846,67847,67848,67849,67850,67851,67852,67853,67854,67855]))">
       <TeleportTo Name="Zenith" AetheryteId="79" Force="True"/>
       <FlyTo Name="Bahrr Lehs" XYZ="-335.5612, 59.00343, 313.9849" Land="True" IgnoreIndoors="True"/>
-	  <!-- Rare Refreshments -->
+    <!-- Rare Refreshments -->
       <If Condition="HasQuest(67843) and GetQuestStep(67843) == 3">
         <GetTo ZoneId="400" XYZ="-376.4859, 60.89619, 319.7832"/>
         <HandOver ItemId="2001990" NpcId="1017321" XYZ="-376.4859, 60.89619, 319.7832" QuestId="67843" StepId="3"/>
@@ -3060,9 +3060,9 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
       </If>
     </If>
     <!-- Reputation & Unlock Quests ** -->
-    <!--    <If Condition="not IsQuestCompleted(67857)">
+ <!--    <If Condition="not IsQuestCompleted(67857)">
       <SoSendCommand GearSet="&craftGearSet;" />
-      <!{1}** The Milk of Moogle Kindness **{1}>
+     <!{1}** The Milk of Moogle Kindness **{1}>
       <SoPickUpQuest QuestId="67857" NpcId="1017169" XYZ="-342.1531, 59.03801, 315.1445" MapId="400" />
       <SoTalkTo NpcId="1017170" XYZ="-344.2283, 59.03801, 317.1587" QuestId="67857" StepId="1" MapId="400" />
       <SoMoveTo XYZ="-95.50629, -8.845936, 189.5018" QuestId="67857" StepId="2" MapId="400"/>
@@ -3077,7 +3077,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
       <SoTalkTo NpcId="1017322" XYZ="-331.5633, 58.8232, 323.1708" QuestId="67857" StepId="8" MapId="400" />
       <FlightUseSpell SpellId="6294" NpcIds="2007197" XYZ="-376.8521, 60.13574, 302.6931" Radius="10" QuestId="67857" StepId="9" MapId="400" />
       <If Condition="&doTurnIn;">
-        <TurnIn QuestId="67857" NpcId="1017169" XYZ="-342.1531, 59.03801, 315.1445" MapId="400" /> 
+        <TurnIn QuestId="67857" NpcId="1017169" XYZ="-342.1531, 59.03801, 315.1445" MapId="400" />
       </If>
     </If>
       <If Condition="not IsQuestCompleted(67858)">
@@ -3091,7 +3091,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
       <SoTalkTo NpcId="1017172" XYZ="-329.3355, 59.0564, 298.2375" QuestId="67858" StepId="5" MapId="400" />
       <!{1}** Horn Component **{1}>
       <While Condition="GetQuestStep(67858) == 6 and not HqHasAtLeast(15721,1)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="31592"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3108,7 +3108,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="31618"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3125,7 +3125,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="31644"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3142,7 +3142,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="31670"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3159,7 +3159,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="31696"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3176,7 +3176,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="31722"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3193,7 +3193,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="31748"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3210,7 +3210,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="31774"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3263,7 +3263,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
       <SoHandOver ItemIds="2001978" NpcId="1017172" XYZ="-329.3355, 59.0564, 298.2375" QuestId="67860" StepId="4" MapId="400" />
       <!{1}** Moogle Tool Component **{1}>
       <While Condition="GetQuestStep(67860) == 255 and not HqHasAtLeast(15722,1)">
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+        <If Condition="ClassName == ClassJobType.Carpenter">
           <Synthesize RecipeId="31593"/>
           <While Condition="CraftingManager.IsCrafting">
             <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3280,7 +3280,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
             </If>
           </While>
         </If>
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+        <If Condition="ClassName == ClassJobType.Blacksmith">
           <Synthesize RecipeId="31619"/>
           <While Condition="CraftingManager.IsCrafting">
             <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3297,7 +3297,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
             </If>
           </While>
         </If>
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+        <If Condition="ClassName == ClassJobType.Armorer">
           <Synthesize RecipeId="31645"/>
           <While Condition="CraftingManager.IsCrafting">
             <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3314,7 +3314,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
             </If>
           </While>
         </If>
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+        <If Condition="ClassName == ClassJobType.Goldsmith">
           <Synthesize RecipeId="31671"/>
           <While Condition="CraftingManager.IsCrafting">
             <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3331,7 +3331,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
             </If>
           </While>
         </If>
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+        <If Condition="ClassName == ClassJobType.Leatherworker">
           <Synthesize RecipeId="31697"/>
           <While Condition="CraftingManager.IsCrafting">
             <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3348,7 +3348,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
             </If>
           </While>
         </If>
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+        <If Condition="ClassName == ClassJobType.Weaver">
           <Synthesize RecipeId="31723"/>
           <While Condition="CraftingManager.IsCrafting">
             <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3365,7 +3365,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
             </If>
           </While>
         </If>
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+        <If Condition="ClassName == ClassJobType.Alchemist">
           <Synthesize RecipeId="31749"/>
           <While Condition="CraftingManager.IsCrafting">
             <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3382,7 +3382,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
             </If>
           </While>
         </If>
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+        <If Condition="ClassName == ClassJobType.Culinarian">
           <Synthesize RecipeId="31775"/>
           <While Condition="CraftingManager.IsCrafting">
             <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3416,7 +3416,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
       <SoTalkTo NpcId="1017172" XYZ="-329.3355, 59.0564, 298.2375" QuestId="67861" StepId="5" MapId="400" />
       <!{1}** Statue Supplies **{1}>
       <While Condition="GetQuestStep(67861) == 255 and not HqHasAtLeast(15723,1)">
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+        <If Condition="ClassName == ClassJobType.Carpenter">
           <Synthesize RecipeId="31594"/>
           <While Condition="CraftingManager.IsCrafting">
             <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3433,7 +3433,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
             </If>
           </While>
         </If>
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+        <If Condition="ClassName == ClassJobType.Blacksmith">
           <Synthesize RecipeId="31620"/>
           <While Condition="CraftingManager.IsCrafting">
             <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3450,7 +3450,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
             </If>
           </While>
         </If>
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+        <If Condition="ClassName == ClassJobType.Armorer">
           <Synthesize RecipeId="31646"/>
           <While Condition="CraftingManager.IsCrafting">
             <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3467,7 +3467,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
             </If>
           </While>
         </If>
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+        <If Condition="ClassName == ClassJobType.Goldsmith">
           <Synthesize RecipeId="31672"/>
           <While Condition="CraftingManager.IsCrafting">
             <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3484,7 +3484,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
             </If>
           </While>
         </If>
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+        <If Condition="ClassName == ClassJobType.Leatherworker">
           <Synthesize RecipeId="31698"/>
           <While Condition="CraftingManager.IsCrafting">
             <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3501,7 +3501,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
             </If>
           </While>
         </If>
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+        <If Condition="ClassName == ClassJobType.Weaver">
           <Synthesize RecipeId="31724"/>
           <While Condition="CraftingManager.IsCrafting">
             <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3518,7 +3518,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
             </If>
           </While>
         </If>
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+        <If Condition="ClassName == ClassJobType.Alchemist">
           <Synthesize RecipeId="31750"/>
           <While Condition="CraftingManager.IsCrafting">
             <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3535,7 +3535,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
             </If>
           </While>
         </If>
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+        <If Condition="ClassName == ClassJobType.Culinarian">
           <Synthesize RecipeId="31776"/>
           <While Condition="CraftingManager.IsCrafting">
             <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3571,7 +3571,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
       <SoTalkTo NpcId="1017172" XYZ="-329.3355, 59.0564, 298.2375" QuestId="67862" StepId="7" MapId="400" />
       <!{1}** Tablet Supplies **{1}>
       <While Condition="GetQuestStep(67862) == 255 and not HqHasAtLeast(15724,1)">
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+        <If Condition="ClassName == ClassJobType.Carpenter">
           <Synthesize RecipeId="31595"/>
           <While Condition="CraftingManager.IsCrafting">
             <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3588,7 +3588,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
             </If>
           </While>
         </If>
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+        <If Condition="ClassName == ClassJobType.Blacksmith">
           <Synthesize RecipeId="31621"/>
           <While Condition="CraftingManager.IsCrafting">
             <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3605,7 +3605,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
             </If>
           </While>
         </If>
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+        <If Condition="ClassName == ClassJobType.Armorer">
           <Synthesize RecipeId="31647"/>
           <While Condition="CraftingManager.IsCrafting">
             <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3622,7 +3622,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
             </If>
           </While>
         </If>
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+        <If Condition="ClassName == ClassJobType.Goldsmith">
           <Synthesize RecipeId="31673"/>
           <While Condition="CraftingManager.IsCrafting">
             <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3639,7 +3639,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
             </If>
           </While>
         </If>
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+        <If Condition="ClassName == ClassJobType.Leatherworker">
           <Synthesize RecipeId="31699"/>
           <While Condition="CraftingManager.IsCrafting">
             <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3656,7 +3656,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
             </If>
           </While>
         </If>
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+        <If Condition="ClassName == ClassJobType.Weaver">
           <Synthesize RecipeId="31725"/>
           <While Condition="CraftingManager.IsCrafting">
             <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3673,7 +3673,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
             </If>
           </While>
         </If>
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+        <If Condition="ClassName == ClassJobType.Alchemist">
           <Synthesize RecipeId="31751"/>
           <While Condition="CraftingManager.IsCrafting">
             <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3690,7 +3690,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
             </If>
           </While>
         </If>
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+        <If Condition="ClassName == ClassJobType.Culinarian">
           <Synthesize RecipeId="31777"/>
           <While Condition="CraftingManager.IsCrafting">
             <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3760,7 +3760,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
            ff14bot.Pathing.Flightor.MoveTo(p2);
            await Coroutine.Yield();
         }
-		
+
         while (Core.Player.Location.Distance(v3) > 2f)
         {
            ff14bot.Pathing.Flightor.MoveTo(p3);

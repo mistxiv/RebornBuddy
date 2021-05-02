@@ -696,7 +696,7 @@ Known Issues: Ensure Game Camera is zoomed out for Quest: Fifty Shades of Yellow
       <If Condition="not IsOnMap(398)">
         <TeleportTo Name="Tailfeather" AetheryteId="76"/>
         <FlyTo XYZ="-448.9801, -35.40849, 178.0301" ArrivalTolerance="0.5" AllowedVariance="1.0" Land="True" IgnoreIndoors="True"/>
-      </If>	  
+      </If>
       <NoCombatMoveTo XYZ="-448.9801, -35.40849, 178.0301"/>
       <TalkTo NpcId="1016864" XYZ="-452.3232, -35.35204, 174.3037" QuestId="67811" StepId="1"/>
     </If>
@@ -1197,7 +1197,7 @@ Known Issues: Ensure Game Camera is zoomed out for Quest: Fifty Shades of Yellow
           <TeleportTo Name="Tailfeather" AetheryteId="76"/>
         <FlyTo Name="Loth ast Vath." XYZ="60.0333, -48.57026, -163.1491" Land="True" IgnoreIndoors="True"/>
         </If>
-        <TurnIn QuestId="67796" NpcId="1011928" InteractDistance="3.0" XYZ="73.19751, -49.19563, -139.0555"/> 
+        <TurnIn QuestId="67796" NpcId="1011928" InteractDistance="3.0" XYZ="73.19751, -49.19563, -139.0555"/>
       </If>
     </If>
   </Order>
@@ -1219,24 +1219,24 @@ Known Issues: Ensure Game Camera is zoomed out for Quest: Fifty Shades of Yellow
       <![CDATA[
         var currentStep = ConditionParser.GetQuestById(67813).GetTodoArgs(1, 0).Item1;
         var ids = new HashSet<int>() { 1016871, 1016872, 1016873, 1016874 };
-    
+
         if (Core.Me.IsMounted)  {  await CommonTasks.StopAndDismount();  }
-    
+
         await Coroutine.Sleep(2000);
-    
+
         var obj = GameObjectManager.GetObjectsOfType<GameObject>(true, false).Where(r => r.IsTargetable && ids.Contains((int)r.NpcId)).FirstOrDefault();
 
         obj.Face();
         obj.Target();
 
         ChatManager.SendChat("/s Uhm Ala");
-    
+
         while (ConditionParser.GetQuestStep(67813) == 2)
         {
           if (Talk.DialogOpen)  {  Talk.Next();  }
           await Coroutine.Yield();
         }
-    
+
         while (ConditionParser.GetQuestStep(67813) == 1 && ConditionParser.GetQuestById(67813).GetTodoArgs(1, 0).Item1 == currentStep)
         {
           if (Talk.DialogOpen)  {  Talk.Next();  }
@@ -1252,10 +1252,10 @@ Known Issues: Ensure Game Camera is zoomed out for Quest: Fifty Shades of Yellow
         var p2 = new ff14bot.Pathing.FlyToParameters(v2) { CheckIndoors = false };
 
         if (!Core.Player.IsMounted)  {  await CommonTasks.SummonFlyingMount();  }
-    
+
         await CommonTasks.TakeOff();
-        await CommonTasks.AscendTo(55f);		
-        MovementManager.MoveStop();		
+        await CommonTasks.AscendTo(55f);
+        MovementManager.MoveStop();
 
         while (Core.Player.Location.Distance(v1) > 3f)
         {
@@ -1268,7 +1268,7 @@ Known Issues: Ensure Game Camera is zoomed out for Quest: Fifty Shades of Yellow
            ff14bot.Pathing.Flightor.MoveTo(p2);
            await Coroutine.Yield();
         }
-    
+
         MovementManager.MoveStop();
         await CommonTasks.Land();
       ]]>
@@ -1281,10 +1281,10 @@ Known Issues: Ensure Game Camera is zoomed out for Quest: Fifty Shades of Yellow
         var p2 = new ff14bot.Pathing.FlyToParameters(v2) { CheckIndoors = false };
 
         if (!Core.Player.IsMounted)  {  await CommonTasks.SummonFlyingMount();  }
-    
+
         await CommonTasks.TakeOff();
-        await CommonTasks.AscendTo(55f);		
-        MovementManager.MoveStop();		
+        await CommonTasks.AscendTo(55f);
+        MovementManager.MoveStop();
 
         while (Core.Player.Location.Distance(v1) > 3f)
         {
