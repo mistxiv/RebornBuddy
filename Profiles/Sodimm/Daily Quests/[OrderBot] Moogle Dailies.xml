@@ -114,7 +114,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
       <If Condition="not IsOnMap(400)">
         <TeleportTo Name="Zenith" AetheryteId="79"/>
       </If>
-      <FlyTo Name="Bahrr Lehs" XYZ="-335.5612, 59.00343, 313.9849" Land="True" IgnoreIndoors="True"/>
+      <LisbethTravel Area="The Churning Mists" XYZ="-335.5612, 59.00343, 313.9849"/>
       <!-- With a Little Help -->
       <If Condition="IsQuestAcceptQualified(67826) and not HasQuest(67826)">
         <PickUpQuest QuestId="67826" NpcId="1017171" XYZ="-335.5612, 59.00343, 313.9849"/>
@@ -781,7 +781,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
         <Synthesize RecipeId="31602"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
-            <CraftAction Name="Steady Hand" ActionId="244"/>
+            <CraftAction Name="Trained Eye" ActionId="100283"/>
           </If>
           <If Condition="CraftingManager.HQPercent &gt; 80">
             <CraftAction Name="Basic Synthesis" ActionId="100001"/>
@@ -1007,7 +1007,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
         <Synthesize RecipeId="31604"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
-            <CraftAction Name="Steady Hand" ActionId="244"/>
+            <CraftAction Name="Trained Eye" ActionId="100283"/>
           </If>
           <If Condition="CraftingManager.HQPercent &gt; 95">
             <CraftAction Name="Basic Synthesis" ActionId="100001"/>
@@ -1171,7 +1171,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
         <Synthesize RecipeId="31605"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
-            <CraftAction Name="Steady Hand" ActionId="244"/>
+            <CraftAction Name="Trained Eye" ActionId="100283"/>
           </If>
           <If Condition="CraftingManager.HQPercent &gt; 80">
             <CraftAction Name="Basic Synthesis" ActionId="100001"/>
@@ -1378,7 +1378,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
         <Synthesize RecipeId="31606"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
-            <CraftAction Name="Steady Hand" ActionId="244"/>
+            <CraftAction Name="Trained Eye" ActionId="100283"/>
           </If>
           <If Condition="CraftingManager.HQPercent &gt; 80">
             <CraftAction Name="Basic Synthesis" ActionId="100001"/>
@@ -1638,7 +1638,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
         <Synthesize RecipeId="31608"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
-            <CraftAction Name="Steady Hand" ActionId="244"/>
+            <CraftAction Name="Trained Eye" ActionId="100283"/>
           </If>
           <If Condition="CraftingManager.HQPercent &gt; 80">
             <CraftAction Name="Basic Synthesis" ActionId="100001"/>
@@ -1978,7 +1978,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
         <Synthesize RecipeId="31610"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
-            <CraftAction Name="Steady Hand" ActionId="244"/>
+            <CraftAction Name="Trained Eye" ActionId="100283"/>
           </If>
           <If Condition="CraftingManager.HQPercent &gt; 80">
             <CraftAction Name="Basic Synthesis" ActionId="100001"/>
@@ -2351,7 +2351,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
         <Synthesize RecipeId="31613"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
-            <CraftAction Name="Steady Hand" ActionId="244"/>
+            <CraftAction Name="Trained Eye" ActionId="100283"/>
           </If>
           <If Condition="CraftingManager.HQPercent &gt; 80">
             <CraftAction Name="Basic Synthesis" ActionId="100001"/>
@@ -2760,7 +2760,7 @@ Required User Setup:  Be on your desired Crafting Class before starting the Prof
         <Synthesize RecipeId="31616"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
-            <CraftAction Name="Steady Hand" ActionId="244"/>
+            <CraftAction Name="Trained Eye" ActionId="100283"/>
           </If>
           <If Condition="CraftingManager.HQPercent &gt; 80">
             <CraftAction Name="Basic Synthesis" ActionId="100001"/>

@@ -5,12 +5,12 @@ Authors:  Sodimm.
 Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear Set has the Echatl Wristglove attached. Ensure you have Moth Pupa bait.
 -->
 <!DOCTYPE Profile [
-<!ENTITY minerGearSet "4">
-<!ENTITY botanistGearSet "5">
-<!ENTITY fisherGearSet "6">
-<!ENTITY combatGearSet "28">
-<!ENTITY crafterGearSet "29">
-<!ENTITY handInGearSet "29">
+<!ENTITY minerGearSet "27">
+<!ENTITY botanistGearSet "28">
+<!ENTITY fisherGearSet "29">
+<!ENTITY combatGearSet "8">
+<!ENTITY crafterGearSet "30">
+<!ENTITY handInGearSet "30">
 ]>
 <Profile>
   <Name>[OrderBot] Ixal Dailies.</Name>
@@ -499,7 +499,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Escape Flyer Component -->
     <While Condition="GetQuestStep(67056) == 255 and not HqHasAtLeast(8120,1)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30537"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -516,7 +516,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30576"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -533,7 +533,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30615"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -550,7 +550,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30654"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -567,7 +567,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30693"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -584,7 +584,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30732"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -601,7 +601,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30771"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -618,7 +618,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30810"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -649,7 +649,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Spare Tank Component -->
     <While Condition="GetQuestStep(67057) == 255 and not HqHasAtLeast(8121,2)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30538"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -666,7 +666,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30577"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -683,7 +683,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30616"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -700,7 +700,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30655"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -717,7 +717,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30694"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -734,7 +734,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30733"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -751,7 +751,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30772"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -768,7 +768,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30811"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -799,7 +799,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Refabrication Component -->
     <While Condition="GetQuestStep(67058) == 255 and not HqHasAtLeast(8122,2)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30539"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -816,7 +816,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30578"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -833,7 +833,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30617"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -850,7 +850,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30656"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -867,7 +867,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30695"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -884,7 +884,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30734"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -901,7 +901,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30773"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -918,7 +918,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30812"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -955,7 +955,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Isolator Component -->
     <While Condition="GetQuestStep(67059) == 255 and not HqHasAtLeast(8123,3)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30540"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -974,7 +974,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30579"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -993,7 +993,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30618"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1012,7 +1012,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30657"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1031,7 +1031,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30696"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1050,7 +1050,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30735"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1069,7 +1069,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30774"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1088,7 +1088,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30813"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1122,7 +1122,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Hyperconductor Component -->
     <While Condition="GetQuestStep(67102) == 255 and not HqHasAtLeast(8125,2)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30541"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1139,7 +1139,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30580"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1156,7 +1156,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30619"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1173,7 +1173,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30658"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1190,7 +1190,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30697"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1207,7 +1207,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30736"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1224,7 +1224,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30775"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1241,7 +1241,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30814"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1277,7 +1277,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Auxiliary Aerodynamo Component -->
     <While Condition="GetQuestStep(67103) == 255 and not HqHasAtLeast(8126,1)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30542"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1296,7 +1296,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30581"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1315,7 +1315,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30620"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1334,7 +1334,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30659"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1353,7 +1353,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30698"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1372,7 +1372,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30737"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1391,7 +1391,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30776"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1410,7 +1410,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30815"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1443,7 +1443,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Decorative Plating Component -->
     <While Condition="GetQuestStep(67104) == 255 and not HqHasAtLeast(8127,2)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30543"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1462,7 +1462,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30582"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1481,7 +1481,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30621"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1500,7 +1500,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30660"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1519,7 +1519,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30699"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1538,7 +1538,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30738"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1557,7 +1557,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30777"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1576,7 +1576,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30816"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1763,7 +1763,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Speaking Tube Component -->
     <While Condition="GetQuestStep(67045) == 255 and not HqHasAtLeast(8112,1)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30531"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1780,7 +1780,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30570"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1797,7 +1797,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30609"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1814,7 +1814,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30648"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1831,7 +1831,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30687"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1848,7 +1848,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30726"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1865,7 +1865,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30765"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1882,7 +1882,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30804"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -1914,7 +1914,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Lamp Component -->
     <While Condition="GetQuestStep(67046) == 255 and not HqHasAtLeast(8113,2)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30532"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="244"/>
@@ -1928,7 +1928,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30571"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="245"/>
@@ -1942,7 +1942,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30610"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="246"/>
@@ -1956,7 +1956,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30649"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="247"/>
@@ -1970,7 +1970,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30688"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="249"/>
@@ -1984,7 +1984,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30727"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="248"/>
@@ -1998,7 +1998,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100060"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30766"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="250"/>
@@ -2012,7 +2012,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30805"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="251"/>
@@ -2041,7 +2041,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Exhaust Outlet Component -->
     <While Condition="GetQuestStep(67047) == 255 and not HqHasAtLeast(8114,1)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30533"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Inner Quiet" ActionId="252"/>
@@ -2058,7 +2058,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30572"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Inner Quiet" ActionId="253"/>
@@ -2075,7 +2075,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30611"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Inner Quiet" ActionId="254"/>
@@ -2092,7 +2092,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30650"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Inner Quiet" ActionId="255"/>
@@ -2109,7 +2109,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30689"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Inner Quiet" ActionId="257"/>
@@ -2126,7 +2126,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30728"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Inner Quiet" ActionId="256"/>
@@ -2143,7 +2143,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100060"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30767"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Inner Quiet" ActionId="258"/>
@@ -2160,7 +2160,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30806"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Inner Quiet" ActionId="259"/>
@@ -2192,7 +2192,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Disposal Unit Component -->
     <While Condition="GetQuestStep(67048) == 255 and not HqHasAtLeast(8115,2)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30534"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="244"/>
@@ -2205,7 +2205,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30573"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="245"/>
@@ -2218,7 +2218,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30612"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="246"/>
@@ -2231,7 +2231,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30651"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="247"/>
@@ -2244,7 +2244,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30690"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="249"/>
@@ -2257,7 +2257,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30729"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -2277,7 +2277,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30768"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="250"/>
@@ -2290,7 +2290,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30807"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="251"/>
@@ -2318,7 +2318,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Ceruleum Tank Component -->
     <While Condition="GetQuestStep(67049) == 255 and not HqHasAtLeast(8117,1)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30535"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="244"/>
@@ -2331,7 +2331,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30574"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="245"/>
@@ -2344,7 +2344,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30613"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="246"/>
@@ -2357,7 +2357,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30652"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="247"/>
@@ -2370,7 +2370,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30691"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="249"/>
@@ -2383,7 +2383,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30730"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="248"/>
@@ -2396,7 +2396,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100060"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30769"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="250"/>
@@ -2409,7 +2409,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30808"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="251"/>
@@ -2437,7 +2437,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Steering Mechanism Component -->
     <While Condition="GetQuestStep(67055) == 255 and not HqHasAtLeast(8118,2)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30536"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="244"/>
@@ -2450,7 +2450,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30575"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="245"/>
@@ -2463,7 +2463,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30614"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="246"/>
@@ -2476,7 +2476,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30653"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="247"/>
@@ -2489,7 +2489,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30692"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="249"/>
@@ -2502,7 +2502,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30731"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="248"/>
@@ -2515,7 +2515,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100060"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30770"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="250"/>
@@ -2528,7 +2528,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30809"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="251"/>
@@ -2690,7 +2690,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Heat Vent Component -->
     <While Condition="GetQuestStep(67039) == 255 and not HqHasAtLeast(8110,4)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30530"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="244"/>
@@ -2703,7 +2703,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30569"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="245"/>
@@ -2716,7 +2716,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30608"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="246"/>
@@ -2729,7 +2729,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30647"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="247"/>
@@ -2742,7 +2742,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30686"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="249"/>
@@ -2755,7 +2755,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30725"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -2772,7 +2772,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30764"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="250"/>
@@ -2785,7 +2785,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30803"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="251"/>
@@ -2830,7 +2830,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Starboard Wing Component -->
     <While Condition="GetQuestStep(67034) == 255 and not HqHasAtLeast(8105,4)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30525"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="244"/>
@@ -2842,7 +2842,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30564"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="245"/>
@@ -2854,7 +2854,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30603"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="246"/>
@@ -2866,7 +2866,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30642"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="247"/>
@@ -2878,7 +2878,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30681"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="249"/>
@@ -2890,7 +2890,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30720"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="248"/>
@@ -2902,7 +2902,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100060"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30759"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="250"/>
@@ -2914,7 +2914,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30798"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="251"/>
@@ -2941,7 +2941,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Larboard Wing Component -->
     <While Condition="GetQuestStep(67035) == 255 and not HqHasAtLeast(8106,4)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30526"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="244"/>
@@ -2953,7 +2953,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30565"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="245"/>
@@ -2965,7 +2965,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30604"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="246"/>
@@ -2977,7 +2977,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30643"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="247"/>
@@ -2989,7 +2989,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30682"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="249"/>
@@ -3001,7 +3001,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30721"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="248"/>
@@ -3013,7 +3013,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100060"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30760"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="250"/>
@@ -3025,7 +3025,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30799"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="251"/>
@@ -3052,7 +3052,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Starboard Wing Control Component -->
     <While Condition="GetQuestStep(67036) == 255 and not HqHasAtLeast(8107,1)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30527"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="244"/>
@@ -3064,7 +3064,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30566"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="245"/>
@@ -3076,7 +3076,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30605"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="246"/>
@@ -3088,7 +3088,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30644"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="247"/>
@@ -3100,7 +3100,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30683"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="249"/>
@@ -3112,7 +3112,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30722"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="248"/>
@@ -3124,7 +3124,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100060"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30761"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="250"/>
@@ -3136,7 +3136,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30800"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="251"/>
@@ -3163,7 +3163,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Larboard Wing Control Component -->
     <While Condition="GetQuestStep(67037) == 255 and not HqHasAtLeast(8108,3)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30528"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="244"/>
@@ -3174,7 +3174,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30567"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="245"/>
@@ -3185,7 +3185,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30606"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="246"/>
@@ -3196,7 +3196,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30645"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="247"/>
@@ -3207,7 +3207,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30684"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="249"/>
@@ -3218,7 +3218,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30723"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="248"/>
@@ -3229,7 +3229,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100060"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30762"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="250"/>
@@ -3240,7 +3240,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30801"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="251"/>
@@ -3266,7 +3266,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Transmission Component -->
     <While Condition="GetQuestStep(67038) == 255 and not HqHasAtLeast(8109,2)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30529"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="244"/>
@@ -3279,7 +3279,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30568"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="245"/>
@@ -3292,7 +3292,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30607"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="246"/>
@@ -3305,7 +3305,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30646"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="247"/>
@@ -3318,7 +3318,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30685"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="249"/>
@@ -3331,7 +3331,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30724"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3348,7 +3348,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30763"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="250"/>
@@ -3361,7 +3361,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30802"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="251"/>
@@ -3452,7 +3452,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Cockpit Exterior Component -->
     <While Condition="GetQuestStep(67050) == 255 and not HqHasAtLeast(8100,2)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30520"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="244"/>
@@ -3463,7 +3463,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30559"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="245"/>
@@ -3474,7 +3474,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30598"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="246"/>
@@ -3485,7 +3485,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30637"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="247"/>
@@ -3496,7 +3496,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30676"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="249"/>
@@ -3507,7 +3507,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30715"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3527,7 +3527,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30754"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="250"/>
@@ -3538,7 +3538,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30793"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="251"/>
@@ -3564,7 +3564,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Cockpit Interior Component -->
     <While Condition="GetQuestStep(67051) == 255 and not HqHasAtLeast(8101,2)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30521"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="244"/>
@@ -3575,7 +3575,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30560"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="245"/>
@@ -3586,7 +3586,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30599"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="246"/>
@@ -3597,7 +3597,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30638"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="247"/>
@@ -3608,7 +3608,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30677"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="249"/>
@@ -3619,7 +3619,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30716"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3639,7 +3639,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30755"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="250"/>
@@ -3650,7 +3650,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30794"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="251"/>
@@ -3676,7 +3676,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Ballast Component -->
     <While Condition="GetQuestStep(67052) == 255 and not HqHasAtLeast(8102,1)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30522"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="244"/>
@@ -3687,7 +3687,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30561"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="245"/>
@@ -3698,7 +3698,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30600"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="246"/>
@@ -3709,7 +3709,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30639"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="247"/>
@@ -3720,7 +3720,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30678"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="249"/>
@@ -3731,7 +3731,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30717"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3751,7 +3751,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30756"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="250"/>
@@ -3762,7 +3762,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30795"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="251"/>
@@ -3788,7 +3788,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Instrument Panel Component -->
     <While Condition="GetQuestStep(67053) == 255 and not HqHasAtLeast(8103,1)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30523"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="244"/>
@@ -3799,7 +3799,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30562"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="245"/>
@@ -3810,7 +3810,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30601"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="246"/>
@@ -3821,7 +3821,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30640"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="247"/>
@@ -3832,7 +3832,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30679"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="249"/>
@@ -3843,7 +3843,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30718"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3860,7 +3860,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30757"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="250"/>
@@ -3871,7 +3871,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30796"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="251"/>
@@ -3897,7 +3897,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Aerodynamo Component -->
     <While Condition="GetQuestStep(67054) == 255 and not HqHasAtLeast(8104,1)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30524"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="244"/>
@@ -3908,7 +3908,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30563"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="245"/>
@@ -3919,7 +3919,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30602"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="246"/>
@@ -3930,7 +3930,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30641"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="247"/>
@@ -3941,7 +3941,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30680"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="249"/>
@@ -3952,7 +3952,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30719"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -3969,7 +3969,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30758"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="250"/>
@@ -3980,7 +3980,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30797"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="251"/>
@@ -4054,7 +4054,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Gyrodrive Component -->
     <While Condition="GetQuestStep(67040) == 255 and not HqHasAtLeast(8095,3)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30515"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -4068,7 +4068,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30554"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -4082,7 +4082,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30593"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -4096,7 +4096,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30632"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -4110,7 +4110,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30671"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -4124,7 +4124,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30710"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -4138,7 +4138,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30749"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -4152,7 +4152,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30788"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -4181,7 +4181,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Rigging Component -->
     <While Condition="GetQuestStep(67041) == 255 and not HqHasAtLeast(8096,2)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30516"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -4195,7 +4195,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30555"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -4209,7 +4209,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30594"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -4223,7 +4223,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30633"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -4237,7 +4237,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30672"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -4251,7 +4251,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30711"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -4265,7 +4265,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30750"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -4279,7 +4279,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30789"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -4308,7 +4308,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Deck Component -->
     <While Condition="GetQuestStep(67042) == 255 and not HqHasAtLeast(8097,1)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30517"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="244"/>
@@ -4320,7 +4320,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30556"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="245"/>
@@ -4332,7 +4332,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30595"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="246"/>
@@ -4344,7 +4344,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30634"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="247"/>
@@ -4356,7 +4356,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30673"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="249"/>
@@ -4368,7 +4368,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30712"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -4382,7 +4382,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30751"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="250"/>
@@ -4394,7 +4394,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30790"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="251"/>
@@ -4421,7 +4421,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Engine Casing Component -->
     <While Condition="GetQuestStep(67043) == 255 and not HqHasAtLeast(8098,1)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30518"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="244"/>
@@ -4431,7 +4431,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30557"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="245"/>
@@ -4441,7 +4441,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30596"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="246"/>
@@ -4451,7 +4451,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30635"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="247"/>
@@ -4461,7 +4461,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30674"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="249"/>
@@ -4471,7 +4471,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30713"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="248"/>
@@ -4482,7 +4482,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100060"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30752"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="250"/>
@@ -4492,7 +4492,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30791"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="251"/>
@@ -4517,7 +4517,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Crafting Tool Component -->
     <While Condition="GetQuestStep(67044) == 255 and not HqHasAtLeast(8099,2)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30519"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="244"/>
@@ -4527,7 +4527,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30558"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="245"/>
@@ -4537,7 +4537,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30597"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="246"/>
@@ -4547,7 +4547,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30636"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="247"/>
@@ -4557,7 +4557,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30675"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="249"/>
@@ -4567,7 +4567,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30714"/>
         <While Condition="CraftingManager.IsCrafting">
           <If Condition="Core.Player.CurrentCPPercent == 100">
@@ -4584,7 +4584,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           </If>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30753"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="250"/>
@@ -4594,7 +4594,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30792"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Steady Hand" ActionId="251"/>
@@ -4670,49 +4670,49 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Starboard Hull Component -->
     <While Condition="GetQuestStep(67032) == 255 and not HasAtLeast(8093,2)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30513"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30552"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30591"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30630"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30669"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30708"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100060"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30747"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30786"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100105"/>
@@ -4733,49 +4733,49 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Larboard Hull Component -->
     <While Condition="GetQuestStep(67033) == 255 and not HasAtLeast(8094,3)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30514"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30553"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30592"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30631"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30670"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30709"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100060"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30748"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30787"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100105"/>
@@ -4804,49 +4804,49 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Bladder Lining Component -->
     <While Condition="GetQuestStep(67031) == 255 and not HasAtLeast(8092,1)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30512"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30551"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30590"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30629"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30668"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30707"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100060"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30746"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30785"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100105"/>
@@ -4867,49 +4867,49 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!-- Bladder Component -->
     <While Condition="GetQuestStep(67030) == 255 and not HasAtLeast(8091,1)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30511"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100001"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30550"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100015"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30589"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100030"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30628"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100075"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30667"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100045"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30706"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100060"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30745"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100090"/>
         </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30784"/>
         <While Condition="CraftingManager.IsCrafting">
           <CraftAction Name="Basic Synthesis" ActionId="100105"/>
@@ -5334,7 +5334,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
         </If>
       </If>
       <While Condition="GetQuestStep(67025) == 255 and not HqHasAtLeast(8131,1)">
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+        <If Condition="ClassName == ClassJobType.Carpenter">
           <Synthesize RecipeId="30546"/>
             <While Condition="CraftingManager.IsCrafting">
               <CraftAction Name="Inner Quiet" ActionId="252"/>
@@ -5345,7 +5345,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
               <CraftAction Name="Basic Synthesis" ActionId="100001"/>
             </While>
         </If>
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+        <If Condition="ClassName == ClassJobType.Blacksmith">
           <Synthesize RecipeId="30585"/>
             <While Condition="CraftingManager.IsCrafting">
               <CraftAction Name="Inner Quiet" ActionId="253"/>
@@ -5356,7 +5356,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
               <CraftAction Name="Basic Synthesis" ActionId="100015"/>
             </While>
         </If>
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+        <If Condition="ClassName == ClassJobType.Armorer">
           <Synthesize RecipeId="30624"/>
             <While Condition="CraftingManager.IsCrafting">
               <CraftAction Name="Inner Quiet" ActionId="254"/>
@@ -5367,7 +5367,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
               <CraftAction Name="Basic Synthesis" ActionId="100030"/>
             </While>
         </If>
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+        <If Condition="ClassName == ClassJobType.Goldsmith">
           <Synthesize RecipeId="30663"/>
             <While Condition="CraftingManager.IsCrafting">
               <CraftAction Name="Inner Quiet" ActionId="255"/>
@@ -5378,7 +5378,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
               <CraftAction Name="Basic Synthesis" ActionId="100075"/>
             </While>
         </If>
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+        <If Condition="ClassName == ClassJobType.Leatherworker">
           <Synthesize RecipeId="30702"/>
             <While Condition="CraftingManager.IsCrafting">
               <CraftAction Name="Inner Quiet" ActionId="257"/>
@@ -5389,7 +5389,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
               <CraftAction Name="Basic Synthesis" ActionId="100045"/>
             </While>
         </If>
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+        <If Condition="ClassName == ClassJobType.Weaver">
           <Synthesize RecipeId="30741"/>
             <While Condition="CraftingManager.IsCrafting">
               <CraftAction Name="Inner Quiet" ActionId="256"/>
@@ -5400,7 +5400,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
               <CraftAction Name="Basic Synthesis" ActionId="100060"/>
             </While>
         </If>
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+        <If Condition="ClassName == ClassJobType.Alchemist">
           <Synthesize RecipeId="30780"/>
             <While Condition="CraftingManager.IsCrafting">
               <CraftAction Name="Inner Quiet" ActionId="258"/>
@@ -5411,7 +5411,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
               <CraftAction Name="Basic Synthesis" ActionId="100090"/>
             </While>
         </If>
-        <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+        <If Condition="ClassName == ClassJobType.Culinarian">
           <Synthesize RecipeId="30819"/>
             <While Condition="CraftingManager.IsCrafting">
               <CraftAction Name="Inner Quiet" ActionId="259"/>
@@ -5468,7 +5468,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!{1}** Propulsion Engine Component **{1}>
     <While Condition="GetQuestStep(67024) == 255 and not HqHasAtLeast(8130,1)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30545"/>
           <While Condition="CraftingManager.IsCrafting">
             <CraftAction Name="Steady Hand" ActionId="244"/>
@@ -5480,7 +5480,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
             <CraftAction Name="Basic Synthesis" ActionId="100001"/>
           </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30584"/>
           <While Condition="CraftingManager.IsCrafting">
             <CraftAction Name="Steady Hand" ActionId="245"/>
@@ -5492,7 +5492,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
             <CraftAction Name="Basic Synthesis" ActionId="100015"/>
           </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30623"/>
           <While Condition="CraftingManager.IsCrafting">
             <CraftAction Name="Steady Hand" ActionId="246"/>
@@ -5504,7 +5504,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
             <CraftAction Name="Basic Synthesis" ActionId="100030"/>
           </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30662"/>
           <While Condition="CraftingManager.IsCrafting">
             <CraftAction Name="Steady Hand" ActionId="247"/>
@@ -5516,7 +5516,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
             <CraftAction Name="Basic Synthesis" ActionId="100075"/>
           </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30701"/>
           <While Condition="CraftingManager.IsCrafting">
             <CraftAction Name="Steady Hand" ActionId="247"/>
@@ -5528,7 +5528,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
             <CraftAction Name="Basic Synthesis" ActionId="100045"/>
           </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30740"/>
           <While Condition="CraftingManager.IsCrafting">
             <CraftAction Name="Steady Hand" ActionId="248"/>
@@ -5540,7 +5540,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
             <CraftAction Name="Basic Synthesis" ActionId="100060"/>
           </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30779"/>
           <While Condition="CraftingManager.IsCrafting">
             <CraftAction Name="Steady Hand" ActionId="250"/>
@@ -5552,7 +5552,7 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
             <CraftAction Name="Basic Synthesis" ActionId="100090"/>
           </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30818"/>
           <While Condition="CraftingManager.IsCrafting">
             <CraftAction Name="Steady Hand" ActionId="251"/>
@@ -5601,49 +5601,49 @@ Required User Setup:  Set your Gear Set numbers below. Ensure your Crafting Gear
     </If>
     <!{1}** Hull Interior Component **{1}>
     <While Condition="GetQuestStep(67023) == 3 and not HasAtLeast(8129,1)">
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Carpenter">
+      <If Condition="ClassName == ClassJobType.Carpenter">
         <Synthesize RecipeId="30544"/>
           <While Condition="CraftingManager.IsCrafting">
             <CraftAction Name="Basic Synthesis" ActionId="100001"/>
           </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Blacksmith">
+      <If Condition="ClassName == ClassJobType.Blacksmith">
         <Synthesize RecipeId="30583"/>
           <While Condition="CraftingManager.IsCrafting">
             <CraftAction Name="Basic Synthesis" ActionId="100015"/>
           </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Armorer">
+      <If Condition="ClassName == ClassJobType.Armorer">
         <Synthesize RecipeId="30622"/>
           <While Condition="CraftingManager.IsCrafting">
             <CraftAction Name="Basic Synthesis" ActionId="100030"/>
           </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Goldsmith">
+      <If Condition="ClassName == ClassJobType.Goldsmith">
         <Synthesize RecipeId="30661"/>
           <While Condition="CraftingManager.IsCrafting">
             <CraftAction Name="Basic Synthesis" ActionId="100075"/>
           </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Leatherworker">
+      <If Condition="ClassName == ClassJobType.Leatherworker">
         <Synthesize RecipeId="30700"/>
           <While Condition="CraftingManager.IsCrafting">
             <CraftAction Name="Basic Synthesis" ActionId="100045"/>
           </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Weaver">
+      <If Condition="ClassName == ClassJobType.Weaver">
         <Synthesize RecipeId="30739"/>
           <While Condition="CraftingManager.IsCrafting">
             <CraftAction Name="Basic Synthesis" ActionId="100060"/>
           </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Alchemist">
+      <If Condition="ClassName == ClassJobType.Alchemist">
         <Synthesize RecipeId="30778"/>
           <While Condition="CraftingManager.IsCrafting">
             <CraftAction Name="Basic Synthesis" ActionId="100090"/>
           </While>
       </If>
-      <If Condition="Core.Player.CurrentJob == Enums.ClassJobType.Culinarian">
+      <If Condition="ClassName == ClassJobType.Culinarian">
         <Synthesize RecipeId="30817"/>
           <While Condition="CraftingManager.IsCrafting">
             <CraftAction Name="Basic Synthesis" ActionId="100105"/>

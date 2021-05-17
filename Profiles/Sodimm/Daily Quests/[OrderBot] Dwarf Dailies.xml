@@ -1379,7 +1379,7 @@ Honored:
               </If>
             </If>
             <If Condition="GetQuestStep(69456) == 2 and HasAtLeast(31173,3)">
-              <FlyTo ZoneId="813" XYZ="-269.3915, 93.37625, -480.1205"/>
+              <LisbethTravel ZoneId="813" XYZ="-269.3915, 93.37625, -480.1205"/>
               <SoHandOver ItemId="31173" NpcId="1033703" XYZ="-270.7714, 93.37625, -480.3387" QuestId="69456" StepId="2"/>
             </If>
           </If>

@@ -342,7 +342,7 @@ Authors:  Sodimm, TuckMeIntoBread
 				<TalkTo NpcId="1019382" XYZ="496.5437, 40.85965, -510.5822" QuestId="68632" StepId="3"/>
 			</If>
 			<If Condition="GetQuestStep(68632) == 4">
-				<GetTo ZoneId="622" XYZ="-625.6262, 40.09414, 101.1272"/>
+				<LisbethTravel ZoneId="622" XYZ="-625.6262, 40.09414, 101.1272"/>
 				<UseTransport NpcId="1025697" XYZ="-627.8325, 40.01948, 100.2059" QuestId="68632" StepId="4"/>
 			</If>
 			<If Condition="GetQuestStep(68632) == 255">
@@ -3357,7 +3357,7 @@ Authors:  Sodimm, TuckMeIntoBread
 						<SoUseSpell SpellId="11499" NpcIds="1026018,1025709" UseDistance="1.0" QuestId="68635" StepId="6">
 							<HotSpots>
 								<HotSpot XYZ="-728.2368, 127.3782, 110.7041"/>
-								<HotSpot XYZ="-761.8677, 127.2556, 137.5295"/>
+								<HotSpot XYZ="-761.5231, 127.2554, 137.6422"/>
 							</HotSpots>
 						</SoUseSpell>
 						<Dismount/>
